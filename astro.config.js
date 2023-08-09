@@ -8,7 +8,7 @@ export default defineConfig({
   site: "https://fluentmoheshwar.pages.dev",
   compressHTML: true,
   build: {
-    inlineStylesheets: "auto"
+    inlineStylesheets: "auto",
   },
-  integrations: [tailwind(), sitemap()]
+  integrations: [tailwind(), sitemap()],
 });
