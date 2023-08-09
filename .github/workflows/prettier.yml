@@ -1,0 +1,40 @@
+name: "Prettier"
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "50 20 * * *"
+jobs:
+  fix:
+    name: Fix formatting issues
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+      
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Adds .github in .prettierignore to avoid errors
+        run: echo ".github" > ".prettierignore"
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Format Using Prettier
+        run: npx prettier -w .
+
+      - name: Delete .prettierignore
+        run: rm ".prettierignore"
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Prettified Code

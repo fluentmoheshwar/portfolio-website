@@ -1,0 +1,73 @@
+{
+  // emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.useInlineCompletions": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // improved suggestion
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+    "other": "on"
+  },
+  "editor.snippetSuggestions": "top",
+  // code formatting
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "editor.insertSpaces": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "prettier.documentSelectors": ["**/*.astro"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.format.enable": true,
+  "javascript.format.enable": true,
+  // spell check
+  "cSpell.enableFiletypes": ["astro"],
+  "cSpell.words": [
+    "Adaytta",
+    "Amarnath",
+    "astro",
+    "astrojs",
+    "Bangla",
+    "Biswas",
+    "Cascadia",
+    "Caskaydia",
+    "Chikungunya",
+    "Clipchamp",
+    "Cortana",
+    "creativecommons",
+    "daisyui",
+    "Dipti",
+    "Elon",
+    "fluentmoheshwar",
+    "frontmatter",
+    "gsudo",
+    "Holoportation",
+    "iisnode",
+    "Khordo",
+    "Kumar",
+    "MERS",
+    "Moheshwar",
+    "OLED",
+    "Photoshop",
+    "prerender",
+    "pwsh",
+    "Satkhira",
+    "tailwindcss",
+    "Tapu",
+    "usefultools",
+    "webp"
+  ],
+  // tailwind
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.emmetCompletions": true
+}

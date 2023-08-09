@@ -1,0 +1,23 @@
+---
+const username = "fluentmoheshwar"
+---
+
+<nav class="navbar justify-center">
+  <ul class="menu menu-horizontal bg-base-200 rounded-box">
+    <li><a href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+    <li><a href="/posts"><i class="fa-solid fa-newspaper"></i> Posts</a></li>
+    <li><a href={`https://github.com/${username}`}><i class="fa-brands fa-github"></i> GitHub</a></li>
+    <li>
+      <details>
+        <summary><i class="fa-solid fa-user"></i> Social Media</summary>
+        <ul class="menu menu-vertical bg-base-200 rounded-box">
+          <li><a href={`https://facebook.com/${username}`}><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href={`https://twitter.com/${username}`}><i class="fa-brands fa-x-twitter"></i> Twitter/X</a></li>
+          <li><a href={`https://instagram.com/${username}`}><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+          <li><a href={`https://threads.net/@${username}`}><i class="fa-brands fa-threads"></i> Threads</a></li>
+          <li><a href={`https://youtube.com/@${username}`}><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+</nav>
