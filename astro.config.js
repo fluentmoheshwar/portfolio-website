@@ -11,7 +11,7 @@ export default defineConfig({
     inlineStylesheets: "auto",
   },
   experimental: {
-   viewTransitions: true
+    viewTransitions: true,
   },
   integrations: [tailwind(), sitemap()],
 });
