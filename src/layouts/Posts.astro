@@ -30,6 +30,7 @@ const {frontmatter} = Astro.props;
 <body class="h-screen flex flex-col">
   <Navbar />
   <article class="prose sm:m-auto">
+    <h1>{frontmatter.title}</h1>
     <slot />
   </article>
   <Footer />
