@@ -9,13 +9,13 @@ const posts = await getCollection("posts");
   description="Posts by Moheshwar Amarnath Biswas"
   socialImage="/images/social/home.png"
 >
-  <ul class="list-disc m-auto">
+  <ul class="m-auto list-disc">
     {
       posts.map((post) => (
         <li>
           <a
             href={`/posts/${post.slug}/`}
-            class="underline decoration-pink-500 duration-500 hover:decoration-sky-500 text-xl sm:text-3xl"
+            class="text-xl underline decoration-pink-500 duration-500 hover:decoration-sky-500 sm:text-3xl"
           >
             {post.data.title}
           </a>
