@@ -10,8 +10,5 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
-  experimental: {
-    viewTransitions: true,
-  },
   integrations: [tailwind(), sitemap()],
 });
