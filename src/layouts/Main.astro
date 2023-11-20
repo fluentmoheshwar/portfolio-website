@@ -28,7 +28,7 @@ const { title, description, socialImage } = Astro.props;
       socialImage={socialImage}
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <ViewTransitions />
+    <ViewTransitions fallback="none"/>
   </head>
   <body class="flex h-screen flex-col">
     <Navbar />
