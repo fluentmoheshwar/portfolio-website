@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-import headerImage from "../../../assets/images/home/header.webp"
+import headerImage from "../../../assets/images/home/header.webp";
 ---
 
 <header class="grid grid-cols-1 items-center sm:grid-cols-2">
@@ -17,7 +17,11 @@ import headerImage from "../../../assets/images/home/header.webp"
       various projects, both personal and professional
     </p>
   </div>
-  <Image src={headerImage} alt="Photo of Moheshwar Amarnath Biswas" class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"/>
+  <Image
+    src={headerImage}
+    alt="Photo of Moheshwar Amarnath Biswas"
+    class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"
+  />
   <!-- <img
     src="/images/home/header.webp"
     alt="Photo of Moheshwar Amarnath Biswas"
