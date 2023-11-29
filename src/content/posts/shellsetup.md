@@ -4,7 +4,7 @@ title: Make your shell look cooler
 description: Shell setup for 10x developers!
 publishDate: 2023-07-06
 draft: false
-image: /images/social/posts/shellsetup.png
+image: /social_images/posts/shellsetup.png
 ---
 
 ![My shell setup](/images/posts/shellsetup/banner.webp)

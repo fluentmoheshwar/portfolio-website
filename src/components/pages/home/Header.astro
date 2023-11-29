@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import headerImage from "../../../assets/images/home/header.webp"
+---
+
 <header class="grid grid-cols-1 items-center sm:grid-cols-2">
   <div>
     <h1 class="p-3.5 pb-0 text-center text-xl sm:text-left sm:text-5xl">
@@ -12,12 +17,13 @@
       various projects, both personal and professional
     </p>
   </div>
-  <img
+  <Image src={headerImage} alt="Photo of Moheshwar Amarnath Biswas" class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"/>
+  <!-- <img
     src="/images/home/header.webp"
     alt="Photo of Moheshwar Amarnath Biswas"
     class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"
     width="375"
     height="500"
     loading="lazy"
-  />
+  /> -->
 </header>

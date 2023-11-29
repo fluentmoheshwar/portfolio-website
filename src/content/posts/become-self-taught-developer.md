@@ -4,7 +4,7 @@ title: How to become self taught developer
 description: 21 key points to be a successful web developer!
 publishDate: 2023-11-24
 draft: false
-image: /images/social/posts/become-self-taught-developer.png
+image: /social_images/posts/become-self-taught-developer.png
 ---
 
 - Discipline and Sacrifice
