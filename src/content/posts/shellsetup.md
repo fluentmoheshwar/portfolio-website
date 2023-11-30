@@ -7,7 +7,7 @@ draft: false
 image: /social_images/posts/shellsetup.png
 ---
 
-![My shell setup](/images/posts/shellsetup/banner.webp)
+![My shell setup](../../assets/images/posts/shellsetup/banner.webp)
 
 For up-to-date instructions please refer to: <https://github.com/fluentmoheshwar/shell#readme>
 
@@ -56,11 +56,11 @@ I'm using Cascadia Code Nerd Font as example.
 
 Windows Terminal > Click on the arrow > Settings
 
-![Settings in Windows Terminal](/images/posts/shellsetup/wintermstepone.webp)
+![Settings in Windows Terminal](../../assets/images/posts/shellsetup/wintermstepone.webp)
 
 Set PowerShell as default shell and Windows Terminal as default terminal like below.
 
-![PowerShell and Windows Terminal default](/images/posts/shellsetup/wintimesteptwo.webp)
+![PowerShell and Windows Terminal default](../../assets/images/posts/shellsetup/wintimesteptwo.webp)
 
 Go to Default > Appearance > Set your nerd font as default
 
@@ -70,7 +70,7 @@ Restart terminal
 
 Hyper>Edit>Preferences
 
-![Settings in Hyper](/images/posts/shellsetup/hyperstepone.webp)
+![Settings in Hyper](../../assets/images/posts/shellsetup/hyperstepone.webp)
 
 Add the following to your hyper.js file
 
@@ -90,11 +90,11 @@ module.exports = {
 ### Visual Studio Code Integrated Terminal
 
 Click on the gear icon> Settings
-![Settings in Vscode](/images/posts/shellsetup/vscodestepone.webp)
+![Settings in Vscode](../../assets/images/posts/shellsetup/vscodestepone.webp)
 
 Click Open settings.json icon.
 
-![settings.json in vscode](/images/posts/shellsetup/vscodesteptwo.webp)
+![settings.json in vscode](../../assets/images/posts/shellsetup/vscodesteptwo.webp)
 
 Add the following code in your settings.json file.
 
