@@ -4,6 +4,6 @@
 
 @layer components {
   .link {
-    @apply text-pink-700 dark:text-pink-400 hover:no-underline hover:text-black hover:dark:text-white
+    @apply text-pink-700 hover:text-black hover:no-underline dark:text-pink-400 hover:dark:text-white;
   }
 }

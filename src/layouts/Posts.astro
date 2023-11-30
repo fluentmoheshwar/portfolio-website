@@ -27,7 +27,7 @@ const { frontmatter } = Astro.props;
   </head>
   <body class="flex h-screen flex-col">
     <Navbar />
-    <article class="prose sm:m-auto prose-a:link">
+    <article class="prose prose-a:link sm:m-auto">
       <h1>{frontmatter.title}</h1>
       <slot />
     </article>
