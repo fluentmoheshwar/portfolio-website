@@ -69,5 +69,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "npm.packageManager": "pnpm"
 }
