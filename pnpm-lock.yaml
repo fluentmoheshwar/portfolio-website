@@ -98,7 +98,7 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta.0
     dependencies:
-      '@astrojs/prism': 3.0.0
+      "@astrojs/prism": 3.0.0
       astro: 4.0.3(lightningcss@1.22.1)
       github-slugger: 2.0.0
       import-meta-resolve: 4.0.0
@@ -1231,8 +1231,11 @@ packages:
     dev: false
 
   /astro@4.0.3(lightningcss@1.22.1):
-    resolution: {integrity: sha512-hrwe7CIVhSKW8/iibDs1hpqzZAtvx6Qu8TFFxjaGbooEWF720M9L+ZZtyTgrcy6K/ZHJ0xwFvZV3/X2Vvbf/LQ==}
-    engines: {node: '>=18.14.1', npm: '>=6.14.0'}
+    resolution:
+      {
+        integrity: sha512-hrwe7CIVhSKW8/iibDs1hpqzZAtvx6Qu8TFFxjaGbooEWF720M9L+ZZtyTgrcy6K/ZHJ0xwFvZV3/X2Vvbf/LQ==,
+      }
+    engines: { node: ">=18.14.1", npm: ">=6.14.0" }
     hasBin: true
     dependencies:
       "@astrojs/compiler": 2.3.2
@@ -1471,7 +1474,10 @@ packages:
     dev: false
 
   /caniuse-lite@1.0.30001566:
-    resolution: {integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==}
+    resolution:
+      {
+        integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==,
+      }
 
   /ccount@2.0.1:
     resolution:
@@ -1925,7 +1931,10 @@ packages:
     dev: false
 
   /electron-to-chromium@1.4.601:
-    resolution: {integrity: sha512-SpwUMDWe9tQu8JX5QCO1+p/hChAi9AE9UpoC3rcHVc+gdCGlbT3SGb5I1klgb952HRIyvt9wZhSz9bNBYz9swA==}
+    resolution:
+      {
+        integrity: sha512-SpwUMDWe9tQu8JX5QCO1+p/hChAi9AE9UpoC3rcHVc+gdCGlbT3SGb5I1klgb952HRIyvt9wZhSz9bNBYz9swA==,
+      }
 
   /emoji-regex@10.3.0:
     resolution:
@@ -2007,8 +2016,11 @@ packages:
     dev: false
 
   /escalade@3.1.1:
-    resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
-    engines: {node: '>=6'}
+    resolution:
+      {
+        integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==,
+      }
+    engines: { node: ">=6" }
 
   /escape-string-regexp@1.0.5:
     resolution:
@@ -2776,80 +2788,110 @@ packages:
     dev: false
 
   /lightningcss-darwin-arm64@1.22.1:
-    resolution: {integrity: sha512-ldvElu+R0QimNTjsKpaZkUv3zf+uefzLy/R1R19jtgOfSRM+zjUCUgDhfEDRmVqJtMwYsdhMI2aJtJChPC6Osg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-ldvElu+R0QimNTjsKpaZkUv3zf+uefzLy/R1R19jtgOfSRM+zjUCUgDhfEDRmVqJtMwYsdhMI2aJtJChPC6Osg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
   /lightningcss-darwin-x64@1.22.1:
-    resolution: {integrity: sha512-5p2rnlVTv6Gpw4PlTLq925nTVh+HFh4MpegX8dPDYJae+NFVjQ67gY7O6iHIzQjLipDiYejFF0yHrhjU3XgLBQ==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-5p2rnlVTv6Gpw4PlTLq925nTVh+HFh4MpegX8dPDYJae+NFVjQ67gY7O6iHIzQjLipDiYejFF0yHrhjU3XgLBQ==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
   /lightningcss-freebsd-x64@1.22.1:
-    resolution: {integrity: sha512-1FaBtcFrZqB2hkFbAxY//Pnp8koThvyB6AhjbdVqKD4/pu13Rl91fKt2N9qyeQPUt3xy7ORUvSO+dPk3J6EjXg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-1FaBtcFrZqB2hkFbAxY//Pnp8koThvyB6AhjbdVqKD4/pu13Rl91fKt2N9qyeQPUt3xy7ORUvSO+dPk3J6EjXg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
     optional: true
 
   /lightningcss-linux-arm-gnueabihf@1.22.1:
-    resolution: {integrity: sha512-6rub98tYGfE5I5j0BP8t/2d4BZyu1S7Iz9vUkm0H26snAFHYxLfj3RbQn0xHHIePSetjLnhcg3QlfwUAkD/FYg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-6rub98tYGfE5I5j0BP8t/2d4BZyu1S7Iz9vUkm0H26snAFHYxLfj3RbQn0xHHIePSetjLnhcg3QlfwUAkD/FYg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     optional: true
 
   /lightningcss-linux-arm64-gnu@1.22.1:
-    resolution: {integrity: sha512-nYO5qGtb/1kkTZu3FeTiM+2B2TAb7m2DkLCTgQIs2bk2o9aEs7I96fwySKcoHWQAiQDGR9sMux9vkV4KQXqPaQ==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-nYO5qGtb/1kkTZu3FeTiM+2B2TAb7m2DkLCTgQIs2bk2o9aEs7I96fwySKcoHWQAiQDGR9sMux9vkV4KQXqPaQ==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
   /lightningcss-linux-arm64-musl@1.22.1:
-    resolution: {integrity: sha512-MCV6RuRpzXbunvzwY644iz8cw4oQxvW7oer9xPkdadYqlEyiJJ6wl7FyJOH7Q6ZYH4yjGAUCvxDBxPbnDu9ZVg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-MCV6RuRpzXbunvzwY644iz8cw4oQxvW7oer9xPkdadYqlEyiJJ6wl7FyJOH7Q6ZYH4yjGAUCvxDBxPbnDu9ZVg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
   /lightningcss-linux-x64-gnu@1.22.1:
-    resolution: {integrity: sha512-RjNgpdM20VUXgV7us/VmlO3Vn2ZRiDnc3/bUxCVvySZWPiVPprpqW/QDWuzkGa+NCUf6saAM5CLsZLSxncXJwg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-RjNgpdM20VUXgV7us/VmlO3Vn2ZRiDnc3/bUxCVvySZWPiVPprpqW/QDWuzkGa+NCUf6saAM5CLsZLSxncXJwg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
   /lightningcss-linux-x64-musl@1.22.1:
-    resolution: {integrity: sha512-ZgO4C7Rd6Hv/5MnyY2KxOYmIlzk4rplVolDt3NbkNR8DndnyX0Q5IR4acJWNTBICQ21j3zySzKbcJaiJpk/4YA==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-ZgO4C7Rd6Hv/5MnyY2KxOYmIlzk4rplVolDt3NbkNR8DndnyX0Q5IR4acJWNTBICQ21j3zySzKbcJaiJpk/4YA==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
   /lightningcss-win32-x64-msvc@1.22.1:
-    resolution: {integrity: sha512-4pozV4eyD0MDET41ZLHAeBo+H04Nm2UEYIk5w/ts40231dRFV7E0cjwbnZvSoc1DXFgecAhiC0L16ruv/ZDCpg==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-4pozV4eyD0MDET41ZLHAeBo+H04Nm2UEYIk5w/ts40231dRFV7E0cjwbnZvSoc1DXFgecAhiC0L16ruv/ZDCpg==,
+      }
+    engines: { node: ">= 12.0.0" }
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     optional: true
 
   /lightningcss@1.22.1:
-    resolution: {integrity: sha512-Fy45PhibiNXkm0cK5FJCbfO8Y6jUpD/YcHf/BtuI+jvYYqSXKF4muk61jjE8YxCR9y+hDYIWSzHTc+bwhDE6rQ==}
-    engines: {node: '>= 12.0.0'}
+    resolution:
+      {
+        integrity: sha512-Fy45PhibiNXkm0cK5FJCbfO8Y6jUpD/YcHf/BtuI+jvYYqSXKF4muk61jjE8YxCR9y+hDYIWSzHTc+bwhDE6rQ==,
+      }
+    engines: { node: ">= 12.0.0" }
     dependencies:
       detect-libc: 1.0.3
     optionalDependencies:
@@ -3682,7 +3724,10 @@ packages:
     dev: false
 
   /node-releases@2.0.14:
-    resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
+    resolution:
+      {
+        integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==,
+      }
 
   /normalize-path@3.0.0:
     resolution:
@@ -5344,8 +5389,11 @@ packages:
     dev: false
 
   /vite@5.0.7(lightningcss@1.22.1):
-    resolution: {integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==}
-    engines: {node: ^18.0.0 || >=20.0.0}
+    resolution:
+      {
+        integrity: sha512-B4T4rJCDPihrQo2B+h1MbeGL/k/GMAHzhQ8S0LjQ142s6/+l3hHTT095ORvsshj4QCkoWu3Xtmob5mazvakaOw==,
+      }
+    engines: { node: ^18.0.0 || >=20.0.0 }
     hasBin: true
     peerDependencies:
       "@types/node": ^18.0.0 || >=20.0.0
