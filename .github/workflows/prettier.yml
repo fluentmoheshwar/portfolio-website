@@ -3,8 +3,6 @@ name: "Prettier"
 on:
   push:
     branches: ["main"]
-  schedule:
-    - cron: "50 20 * * *"
 jobs:
   fix:
     name: Fix formatting issues
