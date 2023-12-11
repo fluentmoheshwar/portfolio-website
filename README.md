@@ -2,6 +2,7 @@
 
 This repository contains source code of my portfolio website, where I showcase my skills, projects and achievements as a web developer. You can visit my website at <https://fluentmoheshwar.pages.dev> and learn more about me and my work. I hope you enjoy browsing through my portfolio and feel free to contact me if you have any questions or feedback.
 
+[![Astro Diagnostics](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/diagnostics.yml/badge.svg)](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/diagnostics.yml)
 [![CodeQL](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/codeql.yml/badge.svg)](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/codeql.yml)
 [![Prettier](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/prettier.yml/badge.svg)](https://github.com/fluentmoheshwar/portfolio-website/actions/workflows/prettier.yml)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
