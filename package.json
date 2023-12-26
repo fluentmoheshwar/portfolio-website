@@ -14,7 +14,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.3",
+    "@astrojs/check": "^0.3.4",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.4",
     "@fortawesome/fontawesome-free": "^6.5.1",
