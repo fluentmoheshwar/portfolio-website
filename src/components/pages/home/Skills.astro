@@ -1,3 +1,10 @@
+---
+import fa6 from 'react-icons/fa6/index.js';
+import si from "react-icons/si/index.js";
+const { FaHtml5, FaCss3Alt, FaSquareJs, FaPython, FaNodeJs, FaGitAlt } = fa6;
+const { SiAdobephotoshop, SiMicrosoftexcel } = si;
+---
+
 <section>
   <h2
     class="mb-2 text-center text-2xl underline decoration-pink-500 sm:text-3xl"
@@ -6,14 +13,17 @@
   </h2>
   <ul class="columns-2 p-3.5">
     <li>
-      <i class="fa-brands fa-html5"></i> HTML and <i
-        class="fa-brands fa-css3-alt"></i> CSS
+      <span class="*:inline"><FaHtml5 /></span> HTML and <span class="*:inline"
+        ><FaCss3Alt /></span
+      > CSS
     </li>
-    <li><i class="fa-brands fa-square-js"></i> JavaScript and TypeScript</li>
-    <li><i class="fa-brands fa-python"></i> Python</li>
-    <li><i class="fa-brands fa-node-js"></i> Node.js and Express.js</li>
-    <li><i class="fa-brands fa-git-alt"></i> Git</li>
-    <li><i class="fa-solid fa-file-excel"></i> Microsoft Excel</li>
-    <li><i class="fa-solid fa-image"></i> Adobe Photoshop</li>
+    <li>
+      <span class="*:inline"><FaSquareJs /></span> JavaScript and TypeScript
+    </li>
+    <li><span class="*:inline"><FaPython /></span> Python</li>
+    <li><span class="*:inline"><FaNodeJs /></span> Node.js and Express.js</li>
+    <li><span class="*:inline"><FaGitAlt /></span> Git</li>
+    <li><span class="*:inline"><SiMicrosoftexcel /></span> Microsoft Excel</li>
+    <li><span class="*:inline"><SiAdobephotoshop /></span> Adobe Photoshop</li>
   </ul>
 </section>
