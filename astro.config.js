@@ -11,19 +11,23 @@ export default defineConfig({
   site: "https://fluentmoheshwar.pages.dev",
   compressHTML: true,
   build: {
-    inlineStylesheets: "auto"
+    inlineStylesheets: "auto",
   },
-  integrations: [tailwind({
-    applyBaseStyles: false
-  }), sitemap(), react()],
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap(),
+    react(),
+  ],
   vite: {
     css: {
       lightningcss: {
-        targets: browserslistToTargets(browserslist("defaults"))
-      }
+        targets: browserslistToTargets(browserslist("defaults")),
+      },
     },
     build: {
-      cssMinify: "lightningcss"
-    }
-  }
+      cssMinify: "lightningcss",
+    },
+  },
 });
