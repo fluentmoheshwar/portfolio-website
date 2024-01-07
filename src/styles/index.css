@@ -6,14 +6,19 @@
   html {
     hanging-punctuation: first last;
   }
- h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
- }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
 
- p {
-  max-width: 70ch;
-  text-wrap: pretty;
- }
+  p {
+    max-width: 70ch;
+    text-wrap: pretty;
+  }
 }
 
 @layer components {
