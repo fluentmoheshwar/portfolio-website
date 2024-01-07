@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    hanging-punctuation: first last;
+  }
+ h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+ }
+
+ p {
+  max-width: 70ch;
+  text-wrap: pretty;
+ }
+}
+
 @layer components {
   .link {
     @apply text-pink-700 hover:text-black hover:no-underline dark:text-pink-400 hover:dark:text-white;
