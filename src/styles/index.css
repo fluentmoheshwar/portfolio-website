@@ -7,7 +7,7 @@
     hanging-punctuation: first last;
   }
   *::selection {
-    @apply bg-pink-700 text-white
+    @apply bg-pink-700 text-white;
   }
   h1,
   h2,
