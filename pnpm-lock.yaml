@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
   browserslist:
-    specifier: ^4.22.3
-    version: 4.22.3
+    specifier: ^4.23.0
+    version: 4.23.0
   daisyui:
     specifier: ^4.7.0
     version: 4.7.0(postcss@8.4.35)
@@ -295,7 +295,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.23.5
       '@babel/helper-validator-option': 7.23.5
-      browserslist: 4.22.3
+      browserslist: 4.23.0
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: false
@@ -1248,8 +1248,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
-      browserslist: 4.22.3
-      caniuse-lite: 1.0.30001566
+      browserslist: 4.23.0
+      caniuse-lite: 1.0.30001581
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1325,15 +1325,15 @@ packages:
     dependencies:
       fill-range: 7.0.1
 
-  /browserslist@4.22.3:
-    resolution: {integrity: sha512-UAp55yfwNv0klWNapjs/ktHoguxuQNGnOzxYmfnXIS+8AsRDZkSDxg7R1AX3GKzn078SBI5dzwzj/Yx0Or0e3A==}
+  /browserslist@4.23.0:
+    resolution: {integrity: sha512-QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001581
-      electron-to-chromium: 1.4.649
+      caniuse-lite: 1.0.30001588
+      electron-to-chromium: 1.4.676
       node-releases: 2.0.14
-      update-browserslist-db: 1.0.13(browserslist@4.22.3)
+      update-browserslist-db: 1.0.13(browserslist@4.23.0)
 
   /buffer@5.7.1:
     resolution: {integrity: sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ==}
@@ -1359,12 +1359,12 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /caniuse-lite@1.0.30001566:
-    resolution: {integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==}
-    dev: false
-
   /caniuse-lite@1.0.30001581:
     resolution: {integrity: sha512-whlTkwhqV2tUmP3oYhtNfaWGYHDdS3JYFQBKXxcUR9qqPWsRhFHhoISO2Xnl/g0xyKzht9mI1LZpiNWfMzHixQ==}
+    dev: false
+
+  /caniuse-lite@1.0.30001588:
+    resolution: {integrity: sha512-+hVY9jE44uKLkH0SrUTqxjxqNTOWHsbnQDIKjwkZ3lNTzUUVdBLBGXtj/q5Mp5u98r3droaZAewQuEDzjQdZlQ==}
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
@@ -1662,8 +1662,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium@1.4.649:
-    resolution: {integrity: sha512-dq/owIaALxZGqWm5RXpKQ4baX6aDC19e2Z16c8SXYN+I71PyEKjbVqQUgm7kcuk8CRqljTKXbolo0XXDjxnh2w==}
+  /electron-to-chromium@1.4.676:
+    resolution: {integrity: sha512-uHt4FB8SeYdhcOsj2ix/C39S7sPSNFJpzShjxGOm1KdF4MHyGqGi389+T5cErsodsijojXilYaHIKKqJfqh7uQ==}
 
   /emmet@2.4.6:
     resolution: {integrity: sha512-dJfbdY/hfeTyf/Ef7Y7ubLYzkBvPQ912wPaeVYpAxvFxkEBf/+hJu4H6vhAvFN6HlxqedlfVn2x1S44FfQ97pg==}
@@ -4119,13 +4119,13 @@ packages:
       unist-util-visit-parents: 6.0.1
     dev: false
 
-  /update-browserslist-db@1.0.13(browserslist@4.22.3):
+  /update-browserslist-db@1.0.13(browserslist@4.23.0):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.22.3
+      browserslist: 4.23.0
       escalade: 3.1.1
       picocolors: 1.0.0
 
