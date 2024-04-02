@@ -1,8 +1,8 @@
-import tailwind from "@astrojs/tailwind";
-import { defineConfig } from "astro/config";
-import sitemap from "@astrojs/sitemap";
-import browserslist from "browserslist";
 import { browserslistToTargets } from "lightningcss";
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import browserslist from "browserslist";
+import sitemap from "@astrojs/sitemap";
 
 import react from "@astrojs/react";
 
