@@ -34,7 +34,7 @@
     }
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.12",
     "browserslist": "^4.23.0",
     "daisyui": "^4.10.1",
     "lightningcss": "^1.24.1",
