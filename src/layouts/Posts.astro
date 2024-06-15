@@ -1,6 +1,5 @@
 ---
 import "../styles/index.css";
-import { ViewTransitions } from "astro:transitions";
 import Footer from "../components/layouts/Footer.astro";
 import Navbar from "../components/layouts/Navbar.astro";
 import SocialTags from "../components/layouts/SocialTags.astro";
@@ -22,7 +21,11 @@ const { frontmatter } = Astro.props;
       description={frontmatter.description}
       socialImage={frontmatter.image}
     />
-    <ViewTransitions fallback="none" />
+   <style>
+      @view-transition {
+        navigation: auto; /* enabled! */
+      }
+    </style>
   </head>
   <body class="flex h-screen flex-col">
     <Navbar />
