@@ -1,0 +1,29 @@
+#nav {
+  background-color: #16449b;
+  width: 100%;
+  padding: 2px;
+  color: #ffffff;
+  margin: 0;
+}
+
+#nav ul li {
+  display: inline;
+}
+
+#nav ul {
+  list-style: none;
+}
+
+#nav ul li a {
+  font-size: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#photo {
+  border: 5px solid #16449b;
+}
+
+#warning {
+  margin-bottom: 5px;
+}
