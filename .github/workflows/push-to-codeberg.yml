@@ -35,4 +35,4 @@ jobs:
           git remote add codeberg git@codeberg.org:fluentmoheshwar/portfolio-website.git
 
       - name: Pushes to Codeberg
-        run: git push codeberg
+        run: git push codeberg --force
