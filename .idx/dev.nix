@@ -16,7 +16,11 @@
     "bradlc.vscode-tailwindcss"
     "streetsidesoftware.code-spell-checker"
     "davidanson.vscode-markdownlint"
-  ]
+  ];
+
+  idx.workspace.onCreate = {
+    npm-install = "bun install";
+  };
 
   # Enable previews and customize configuration
   idx.previews = {
