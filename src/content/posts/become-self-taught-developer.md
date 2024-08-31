@@ -1,4 +1,5 @@
 ---
+lang: en
 layout: ../../layouts/Posts.astro
 title: How to become self taught developer
 description: 21 key points to be a successful web developer!

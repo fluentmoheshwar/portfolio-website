@@ -1,4 +1,5 @@
 ---
+lang: en
 layout: ../../layouts/Posts.astro
 title: Make your shell look cooler
 description: Shell setup for 10x developers!
