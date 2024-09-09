@@ -12,6 +12,7 @@ import {
   FaYoutube,
   FaBluesky,
 } from "react-icons/fa6";
+import { GoLinkExternal } from "react-icons/go";
 ---
 
 <nav class="navbar justify-center p-0">
@@ -21,7 +22,7 @@ import {
     <li><a href="/"><FaHouse /> Home</a></li>
     <li><a href="/posts/"><FaNewspaper /> Posts</a></li>
     <li>
-      <a href={`https://github.com/${username}/`}><FaGithub /> GitHub</a>
+      <a href={`https://github.com/${username}/`} target="_blank"><FaGithub /> GitHub <GoLinkExternal /></a>
     </li>
     <li>
       <details>
@@ -29,22 +30,25 @@ import {
         <ul class="menu menu-vertical rounded-box bg-base-200">
           <li>
             <a href={`https://facebook.com/${username}/`}
-              ><FaFacebook /> Facebook</a
+             target="_blank" ><FaFacebook /> Facebook <GoLinkExternal /></a
             >
           </li>
           <li>
             <a href={`https://twitter.com/${username}/`}
-              ><FaXTwitter /> Twitter/X</a
+target="_blank"
+              ><FaXTwitter /> Twitter/X <GoLinkExternal /></a
             >
           </li>
           <li>
             <a href={`https://www.instagram.com/${username}/`}
-              ><FaInstagram /> Instagram</a
+target="_blank"
+              ><FaInstagram /> Instagram <GoLinkExternal /></a
             >
           </li>
           <li>
             <a href={`https://www.threads.net/@${username}/`}
-              ><FaThreads /> Threads</a
+target="_blank" 
+              ><FaThreads /> Threads <GoLinkExternal /></a
             >
           </li>
           <li>
@@ -54,7 +58,8 @@ import {
           </li>
           <li>
             <a href={`https://www.youtube.com/@${username}/`}
-              ><FaYoutube /> YouTube</a
+target="_blank" 
+              ><FaYoutube /> YouTube <GoLinkExternal /></a
             >
           </li>
         </ul>
