@@ -31,6 +31,6 @@ export default defineConfig({
     },
   },
   legacy: {
-        collections: true
+    collections: true,
   },
 });
