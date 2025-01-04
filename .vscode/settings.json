@@ -29,7 +29,9 @@
   "json.format.enable": true,
   "javascript.format.enable": true,
   // spell check
-  "cSpell.enableFiletypes": ["astro"],
+  "cSpell.enabledFileTypes": {
+    "astro": true
+  },
   "cSpell.words": [
     "Adaytta",
     "Amarnath",
