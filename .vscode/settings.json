@@ -74,5 +74,5 @@
     "*.css": "tailwindcss"
   },
   "tailwindCSS.emmetCompletions": true,
-  "npm.packageManager": "pnpm"
+  "npm.packageManager": "bun"
 }
