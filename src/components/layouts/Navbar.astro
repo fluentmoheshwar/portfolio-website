@@ -1,17 +1,17 @@
 ---
 const username = "fluentmoheshwar";
 import {
+  FaBluesky,
   FaFacebook,
   FaGithub,
   FaHouse,
   FaInstagram,
+  FaMastodon,
   FaNewspaper,
   FaThreads,
   FaUser,
   FaXTwitter,
   FaYoutube,
-  FaBluesky,
-  FaMastodon,
 } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
 ---
@@ -20,11 +20,14 @@ import { GoLinkExternal } from "react-icons/go";
   <ul
     class="menu menu-horizontal rounded-box bg-base-200 p-0 text-[10px] sm:text-base"
   >
-    <li><a href="/"><FaHouse /> Home</a></li>
-    <li><a href="/posts/"><FaNewspaper /> Posts</a></li>
+    <li><a href="/" aria-label="Home"><FaHouse /> Home</a></li>
+    <li><a href="/posts/" aria-label="Posts"><FaNewspaper /> Posts</a></li>
     <li>
-      <a href={`https://github.com/${username}/`} target="_blank"
-        ><FaGithub /> GitHub <GoLinkExternal /></a
+      <a
+        rel="me"
+        href={`https://github.com/${username}/`}
+        target="_blank"
+        aria-label="GitHub"><FaGithub /> GitHub <GoLinkExternal /></a
       >
     </li>
     <li>
@@ -32,41 +35,65 @@ import { GoLinkExternal } from "react-icons/go";
         <summary><FaUser /> Social Media</summary>
         <ul class="menu menu-vertical rounded-box bg-base-200">
           <li>
-            <a href={`https://facebook.com/${username}/`} target="_blank"
+            <a
+              rel="me"
+              href={`https://facebook.com/${username}/`}
+              target="_blank"
+              aria-label="Facebook"
               ><FaFacebook /> Facebook <GoLinkExternal /></a
             >
           </li>
           <li>
-            <a href={`https://x.com/${username}/`} target="_blank"
+            <a
+              rel="me"
+              href={`https://x.com/${username}/`}
+              target="_blank"
+              aria-label="Twitter"
               ><FaXTwitter /> Twitter/X <GoLinkExternal /></a
             >
           </li>
           <li>
-            <a href={`https://www.instagram.com/${username}/`} target="_blank"
+            <a
+              rel="me"
+              href={`https://www.instagram.com/${username}/`}
+              target="_blank"
+              aria-label="Instagram"
               ><FaInstagram /> Instagram <GoLinkExternal /></a
             >
           </li>
           <li>
-            <a href={`https://www.threads.net/@${username}/`} target="_blank"
-              ><FaThreads /> Threads <GoLinkExternal /></a
+            <a
+              rel="me"
+              href={`https://www.threads.net/@${username}/`}
+              target="_blank"
+              aria-label="Threads"><FaThreads /> Threads <GoLinkExternal /></a
             >
           </li>
           <li>
             <a
+              rel="me"
               href={`https://bsky.app/profile/${username}.bsky.social/`}
-              target="_blank"><FaBluesky /> Bluesky <GoLinkExternal /></a
+              target="_blank"
+              aria-label="Bluesky"
+            >
+              <FaBluesky /> Bluesky <GoLinkExternal /></a
             >
           </li>
           <li>
-            <a href={`https://www.youtube.com/@${username}/`} target="_blank"
-              ><FaYoutube /> YouTube <GoLinkExternal /></a
+            <a
+              rel="me"
+              href={`https://www.youtube.com/@${username}/`}
+              target="_blank"
+              aria-label="YouTube"><FaYoutube /> YouTube <GoLinkExternal /></a
             >
           </li>
           <li>
             <a
               rel="me"
               href="https://mastodon.social/@fluentmoheshwar"
-              target="_blank"><FaMastodon /> Mastodon <GoLinkExternal /></a
+              target="_blank"
+              aria-label="Mastodon"
+              ><FaMastodon /> Mastodon <GoLinkExternal /></a
             >
           </li>
         </ul>
