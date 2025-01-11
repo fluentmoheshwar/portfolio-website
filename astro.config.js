@@ -30,7 +30,4 @@ export default defineConfig({
       cssMinify: "lightningcss",
     },
   },
-  legacy: {
-    collections: true,
-  },
 });

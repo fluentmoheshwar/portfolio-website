@@ -14,7 +14,7 @@ const posts = await getCollection("posts");
       posts.map((post) => (
         <li>
           <a
-            href={`/posts/${post.slug}/`}
+            href={`/posts/${post.id}/`}
             class="text-xl underline decoration-pink-500 duration-500 hover:decoration-sky-500 sm:text-3xl"
           >
             {post.data.title}
