@@ -36,6 +36,6 @@ jobs:
 
       - name: Unshallows Codeberg
         run: git fetch --unshallow codeberg
-        
+
       - name: Pushes to Codeberg
         run: git push codeberg --force
