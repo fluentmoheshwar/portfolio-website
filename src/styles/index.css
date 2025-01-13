@@ -29,3 +29,7 @@
     @apply text-pink-700 hover:text-black hover:no-underline dark:text-pink-400 hover:dark:text-white;
   }
 }
+
+@view-transition {
+  navigation: auto; /* enabled! */
+}

@@ -69,10 +69,6 @@
     "usefultools",
     "webp"
   ],
-  // tailwind
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "tailwindCSS.emmetCompletions": true,
   "npm.packageManager": "bun"
 }

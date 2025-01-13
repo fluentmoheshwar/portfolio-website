@@ -22,8 +22,8 @@ const { Content } = await render(post);
     class="prose lg:prose-lg *:text-center prose-pre:text-left sm:flex sm:flex-col sm:items-center sm:self-center"
   >
     <h1>{post.data.title}</h1>
-    <p class="text-lg">{post.data.description}</p>
-    <p>Published on {post.data.publishDate.toLocaleDateString()}</p>
+    <p class="text-xl not-prose">{post.data.description}</p>
+    <p class="not-prose">Published on {post.data.publishDate.toLocaleDateString()}</p>
     <Content />
   </article>
 </MainLayout>
