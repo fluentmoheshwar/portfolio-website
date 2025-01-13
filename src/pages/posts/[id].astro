@@ -15,7 +15,7 @@ const { Content } = await render(post);
 <MainLayout
   title={post.data.title}
   description={post.data.description}
-  socialImage="/social_images/home.png"
+  socialImage={post.data.socialImage}
   keywords={post.data.keywords}
 >
   <article

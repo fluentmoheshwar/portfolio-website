@@ -6,7 +6,7 @@ description: 21 key points to be a successful web developer!
 publishDate: 2023-11-24
 draft: false
 keywords: self-taught developer, web development, programming, coding, software engineering, learning to code, developer tips, coding journey, programming advice, self-learning, tech career, software development, coding skills, developer roadmap, tech tips, programming journey, coding advice, developer skills, learning programming, tech industry, software career
-image: /social_images/posts/become-self-taught-developer.png
+socialImage: /social_images/posts/become-self-taught-developer.png
 ---
 
 - Discipline and Sacrifice

@@ -6,7 +6,7 @@ description: Shell setup for 10x developers!
 publishDate: 2023-07-06
 keywords: shell, terminal, PowerShell, PSReadLine, PowerType, gsudo, starship, nerd font, Windows Terminal, Hyper, Visual Studio Code, shell setup, prompt engine
 draft: false
-image: /social_images/posts/shellsetup.png
+socialImage: /social_images/posts/shellsetup.png
 ---
 
 ![My shell setup](../../assets/images/posts/shellsetup/banner.webp)
