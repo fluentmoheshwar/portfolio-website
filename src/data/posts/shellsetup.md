@@ -4,6 +4,7 @@ layout: ../../layouts/Posts.astro
 title: Make your shell look cooler
 description: Shell setup for 10x developers!
 publishDate: 2023-07-06
+keywords: shell, terminal, PowerShell, PSReadLine, PowerType, gsudo, starship, nerd font, Windows Terminal, Hyper, Visual Studio Code, shell setup, prompt engine
 draft: false
 image: /social_images/posts/shellsetup.png
 ---
