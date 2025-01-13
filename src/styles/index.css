@@ -26,7 +26,11 @@
 
 @layer components {
   .link {
-    @apply text-pink-700 hover:text-black hover:no-underline dark:text-pink-400 hover:dark:text-white;
+    @apply text-pink-700 hover:text-black dark:text-pink-400 hover:dark:text-white;
+  }
+
+  a {
+    @apply hover:no-underline;
   }
 }
 
