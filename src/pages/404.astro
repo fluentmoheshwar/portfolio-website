@@ -1,0 +1,40 @@
+---
+import MainLayout from "../layouts/Main.astro";
+---
+
+<MainLayout
+  title="Error 404 - Page not found!"
+  description="The page you're looking for seems to have vanished into the digital blackhole. Let's get you back to familiar territory."
+  socialImage="/social_images/home.png"
+  keywords="404"
+>
+  <div
+    class="flex min-h-screen items-center justify-center px-4"
+  >
+    <div class="space-y-8 text-center">
+      <div class="relative">
+        <h1 class="text-9xl font-bold text-white opacity-20">404</h1>
+        <h1
+          class="absolute left-0 top-0 w-full animate-pulse text-9xl font-bold text-pink-500"
+        >
+          404
+        </h1>
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-3xl font-semibold text-white">Oops! Page Not Found</h2>
+        <p class="mx-auto max-w-lg text-gray-400">
+          The page you're looking for seems to have vanished into the digital
+          blackhole. Let's get you back to familiar territory.
+        </p>
+      </div>
+      <div class="pt-4">
+        <a
+          href="/"
+          class="rounded-lg bg-pink-600 px-8 py-3 font-medium text-white shadow-lg transition-colors duration-200 hover:bg-pink-700 hover:shadow-pink-500/30"
+        >
+          Return Home
+        </a>
+      </div>
+    </div>
+  </div>
+</MainLayout>
