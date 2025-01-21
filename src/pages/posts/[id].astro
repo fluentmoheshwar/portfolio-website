@@ -28,7 +28,9 @@ const { Content } = await render(post);
       Published on {post.data.publishDate.toLocaleDateString()}
     </p>
     <Content />
-    <button type="button" onclick="share();" class="btn mt-2"><FaShare /> Share</button>
+    <button type="button" onclick="share();" class="btn mt-2"
+      ><FaShare /> Share</button
+    >
   </article>
   <script is:inline>
     const share = () => {
@@ -39,7 +41,9 @@ const { Content } = await render(post);
           url: window.location.href,
         });
       } else {
-        alert("Web Share API is not supported in your browser or operating system!");
+        alert(
+          "Web Share API is not supported in your browser or operating system!",
+        );
       }
     };
   </script>
