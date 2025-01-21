@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import { FaShare } from "react-icons/fa";
 import MainLayout from "../../layouts/Main.astro";
 export async function getStaticPaths() {
   const posts = await getCollection("posts");
@@ -27,5 +28,19 @@ const { Content } = await render(post);
       Published on {post.data.publishDate.toLocaleDateString()}
     </p>
     <Content />
+    <button type="button" onclick="share();" class="btn mt-2"><FaShare /> Share</button>
   </article>
+  <script is:inline>
+    const share = () => {
+      if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          text: document.querySelector("meta[name=description]").content,
+          url: window.location.href,
+        });
+      } else {
+        alert("Web Share API is not supported in your browser or operating system!");
+      }
+    };
+  </script>
 </MainLayout>
