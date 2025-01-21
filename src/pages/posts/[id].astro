@@ -28,7 +28,7 @@ const { Content } = await render(post);
       Published on {post.data.publishDate.toLocaleDateString()}
     </p>
     <Content />
-    <button type="button" onclick="share();" class="btn mt-2"
+    <button type="button" onclick="share();" class="btn mt-2 flex m-auto" aria-label="Share"
       ><FaShare /> Share</button
     >
   </article>
