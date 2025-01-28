@@ -70,5 +70,8 @@
     "webp"
   ],
   "tailwindCSS.emmetCompletions": true,
-  "npm.packageManager": "bun"
+  "npm.packageManager": "bun",
+  "files.associations": {
+    "bun.lock": "jsonc"
+  }
 }
