@@ -1,9 +1,8 @@
 import { browserslistToTargets } from "lightningcss";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import browserslist from "browserslist";
 import sitemap from "@astrojs/sitemap";
-
 import react from "@astrojs/react";
 
 // https://astro.build/config
@@ -13,14 +12,9 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    sitemap(),
-    react(),
-  ],
+  integrations: [sitemap(), react()],
   vite: {
+    plugins: [tailwindcss()],
     css: {
       lightningcss: {
         targets: browserslistToTargets(browserslist("defaults")),
