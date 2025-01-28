@@ -1,7 +1,9 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui" {
-  themes: lemonade --default, dracula --prefersdark;
+  themes:
+    lemonade --default,
+    dracula --prefersdark;
 }
 
 @layer base {
