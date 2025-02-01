@@ -30,7 +30,7 @@
 
 @layer components {
   .link {
-    @apply text-pink-700 hover:text-black dark:text-pink-400 hover:dark:text-white;
+    @apply text-pink-800 hover:text-black dark:text-pink-400 hover:dark:text-white;
   }
 
   a {
