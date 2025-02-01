@@ -1,6 +1,10 @@
+---
+import Image from "astro/components/Image.astro";
+---
+
 <div class="flex-grow"></div>
 <footer class="footer footer-center bg-base-300 text-base-content mt-4 p-4">
-  <div>
+  <div class="place-self-start justify-self-start">
     <p>
       Copyright © 2023-2025 Moheshwar Amarnath Biswas. Some rights reserved.
     </p>
@@ -19,5 +23,16 @@
         class="link">MIT License</a
       >
     </p>
+  </div>
+  <div class="sm:place-self-center sm:justify-self-end sm:grid-flow-col">
+    <Image
+      src="https://app.greenweb.org/api/v3/greencheckimage/fluentmoheshwar.pages.dev"
+      alt="This website runs on green hosting - verified by thegreenwebfoundation.org"
+      width="200"
+      height="95"
+    />
+    <div id="wcb" class="carbonbadge wcb-d"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer
+    ></script>
   </div>
 </footer>
