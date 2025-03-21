@@ -4,16 +4,17 @@ import Navbar from "../components/layouts/Navbar.astro";
 import SocialTags from "../components/layouts/SocialTags.astro";
 import "../styles/index.css";
 export interface Props {
+  lang: string;
   title: string;
   description: string;
   socialImage: string;
   keywords: string;
 }
-const { title, description, socialImage, keywords } = Astro.props;
+const { lang, title, description, socialImage, keywords } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
