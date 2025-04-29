@@ -73,5 +73,10 @@
   "npm.packageManager": "bun",
   "files.associations": {
     "bun.lock": "jsonc"
-  }
+  },
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "./.vscode/daisyui.md"
+    }
+  ],
 }
