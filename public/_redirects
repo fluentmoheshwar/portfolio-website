@@ -1,5 +1,6 @@
 /home / 301
-/blog /posts 301
+/blog/* /posts/:splat 200
+/blogs/* /posts/:splat 200
 /about / 301
 /gh https://github.com/fluentmoheshwar/ 301
 /github https://github.com/fluentmoheshwar/ 301
