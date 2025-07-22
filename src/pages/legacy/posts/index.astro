@@ -1,3 +1,8 @@
+---
+import { getCollection } from "astro:content";
+const posts = await getCollection("posts");
+---
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -24,76 +29,22 @@
           </li>
         </ul>
       </div>
-      <img
-        src="./images/welcome.gif"
-        alt="Welcome to my website"
-        id="welcome"
-      />
-      <table>
-        <tr>
-          <td>
-            <blink><h1>Meet Moheshwar Amarnath Biswas</h1></blink>
-          </td>
-          <td>
-            <p>
-              A software developer with expertise in Tailwind CSS, TypeScript
-              and more. Alongside my coding prowess, I also enjoy occasional
-              singing, adding a touch of creativity to my life. I started
-              learning programming when I was 7 years old, after I discovered
-              how much fun it was to create my own stuff. Since then, I've been
-              constantly improving my skills and working on various projects,
-              both personal and professional.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!-- prettier-ignore -->
-            <img
-          src="./images/photo.png"
-          alt="Photo of Moheshwar Amarnath Biswas"
-          id="photo"
-          width="375"
-          height="500"
-        >
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <h2
-              style="text-decoration: underline; text-decoration-color: #16449b"
-            >
-              Skills
-            </h2>
-            <ul>
-              <li>HTML and CSS</li>
-              <li>JavaScript and TypeScript</li>
-              <li>Python</li>
-              <li>Node.js and Express.js</li>
-              <li>Git</li>
-              <li>Microsoft Excel</li>
-              <li>Adobe Photoshop</li>
-            </ul>
-          </td>
-          <td>
-            <h2
-              style="text-decoration: underline; text-decoration-color: #16449b"
-            >
-              Projects
-            </h2>
-            <ul>
-              <li>Useful Tools for Windows</li>
-              <li>Portfolio Website</li>
-              <li>Amar Bangla Bhasa</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </div>
+
+      <ul class="m-auto list-disc">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            href={`./posts/${post.id}/`}
+          >
+            {post.data.title}
+          </a>
+          <p class="text-base sm:text-lg">{post.data.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+
     <div id="footer">
       <center>
         <table>

@@ -1,3 +1,16 @@
+---
+import { getCollection, render } from "astro:content";
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+  return posts.map((post) => ({
+    params: { id: post.id },
+    props: post,
+  }));
+}
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
@@ -9,14 +22,14 @@
     <!-- prettier-ignore -->
     <meta name="author" content="Moheshwar Amarnath Biswas">
     <!-- prettier-ignore -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../style.css">
   </head>
   <body>
     <div id="header">
       <div id="nav">
         <ul>
-          <li><a href="./" target="_blank">Home </a></li>
-          <li><a href="./posts" target="_blank">Posts </a></li>
+          <li><a href="../../" target="_blank">Home </a></li>
+          <li><a href="../../posts" target="_blank">Posts </a></li>
           <li>
             <a href="https://www.facebook.com/fluentmoheshwar" target="_blank"
               >Facebook</a
@@ -24,76 +37,18 @@
           </li>
         </ul>
       </div>
-      <img
-        src="./images/welcome.gif"
-        alt="Welcome to my website"
-        id="welcome"
-      />
-      <table>
-        <tr>
-          <td>
-            <blink><h1>Meet Moheshwar Amarnath Biswas</h1></blink>
-          </td>
-          <td>
-            <p>
-              A software developer with expertise in Tailwind CSS, TypeScript
-              and more. Alongside my coding prowess, I also enjoy occasional
-              singing, adding a touch of creativity to my life. I started
-              learning programming when I was 7 years old, after I discovered
-              how much fun it was to create my own stuff. Since then, I've been
-              constantly improving my skills and working on various projects,
-              both personal and professional.
-            </p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!-- prettier-ignore -->
-            <img
-          src="./images/photo.png"
-          alt="Photo of Moheshwar Amarnath Biswas"
-          id="photo"
-          width="375"
-          height="500"
-        >
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tr>
-          <td>
-            <h2
-              style="text-decoration: underline; text-decoration-color: #16449b"
-            >
-              Skills
-            </h2>
-            <ul>
-              <li>HTML and CSS</li>
-              <li>JavaScript and TypeScript</li>
-              <li>Python</li>
-              <li>Node.js and Express.js</li>
-              <li>Git</li>
-              <li>Microsoft Excel</li>
-              <li>Adobe Photoshop</li>
-            </ul>
-          </td>
-          <td>
-            <h2
-              style="text-decoration: underline; text-decoration-color: #16449b"
-            >
-              Projects
-            </h2>
-            <ul>
-              <li>Useful Tools for Windows</li>
-              <li>Portfolio Website</li>
-              <li>Amar Bangla Bhasa</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </div>
+
+      <div
+  >
+    <h1>{post.data.title}</h1>
+    <p>{post.data.description}</p>
+    <p>
+      Published on {post.data.publishDate.toLocaleDateString()}
+    </p>
+    <p style="color: #ff0000">Warning: Images may not display in your browser.</p>
+    <Content />
+  </div>
+
     <div id="footer">
       <center>
         <table>
@@ -101,14 +56,14 @@
             <td>
               <!-- prettier-ignore -->
               <img
-            src="./images/underconstruction4.gif"
+            src="../../images/underconstruction4.gif"
             alt="This site is under construction"
           >
             </td>
             <td>
               <!-- prettier-ignore -->
               <img
-            src="./images/ie.gif"
+            src="../../images/ie.gif"
             alt="Internet Explorer"
             width="88"
             height="31"
@@ -117,7 +72,7 @@
             <td>
               <!-- prettier-ignore -->
               <img
-            src="./images/firefox.gif"
+            src="../../images/firefox.gif"
             alt="Firefox"
             width="88"
             height="31"
@@ -126,7 +81,7 @@
             <td>
               <!-- prettier-ignore -->
               <img
-            src="./images/netscape_1.gif"
+            src="../../images/netscape_1.gif"
             alt="This website is viewed best with Netscape Navigator"
             width="88"
             height="31"
