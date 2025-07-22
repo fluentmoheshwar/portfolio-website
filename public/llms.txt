@@ -1,0 +1,30 @@
+# Moheshwar Amarnath Biswas's Personal Website
+
+> Portfolio Website of Moheshwar Amarnath Biswas. A software developer from Bangladesh.
+
+A personal website featuring his various projects and his blogs on technology.
+
+## Main Sections
+
+- [Blogs](https://fluentmoheshwar.pages.dev/posts/) - Various articles about technology.
+
+## All Blog Articles
+
+- [How to become self taught developer](https://fluentmoheshwar.pages.dev/posts/become-self-taught-developer/) - A article when he shares 21 key points to become a successful self taught developer. It was his personal note based on Sumit Saha's video.
+- [Progressive Web Apps (PWA) কি, কেন, কিভাবে?](https://fluentmoheshwar.pages.dev/posts/pwa-ki/) - A bengali (bangla) article on Progressive Web Apps
+- [How to make your shell look cooler](https://fluentmoheshwar.pages.dev/posts/shellsetup/) - A article where he shares a theme to customize your shell.
+
+## His social media
+
+- [GitHub](https://github.com/fluentmoheshwar)
+- [X](https://x.com/fluentmoheshwar)
+- [Facebook](https://facebook.com/fluentmoheshwar)
+- [Instagram](https://instagram.com/fluentmoheshwar)
+- [Threads](https://www.threads.com/@fluentmoheshwar/)
+- [Bluesky](https://bsky.app/profile/fluentmoheshwar.bsky.social)
+- [Mastodon](https://mastodon.social/@fluentmoheshwar)
+- [YouTube](https://www.youtube.com/@fluentmoheshwar)
+
+## His legacy website
+
+[Legacy Website](https://fluentmoheshwar.pages.dev/legacy/) - 90s looking website!
