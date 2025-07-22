@@ -1,0 +1,89 @@
+---
+import { Image } from "astro:assets";
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { FaDownload, FaGithub } from "react-icons/fa6";
+import PujaBloomImage from "../../../assets/images/home/puja_bloom.png";
+import UsefulToolsImage from "../../../assets/images/home/useful_tools.png";
+---
+
+<section class="grid gap-1.5">
+  <h2
+    class="mb-2 text-center text-2xl underline decoration-pink-500 sm:text-3xl"
+  >
+    Projects
+  </h2>
+  <div class="grid grid-cols-1 items-center sm:grid-cols-2" id="useful-tools">
+    <div>
+      <h1 class="p-3.5 pb-0 text-center text-xl sm:text-left sm:text-5xl">
+        Useful Tools for Windows
+      </h1>
+      <p class="sm:text-md p-3.5 text-justify text-sm">
+        It's a collection of handy tools, scripts and shortcuts that will make
+        your Windows experience more efficient and fun. You can tweak your
+        settings or access hidden features with ease.
+      </p>
+      <button class="btn ml-3.5"
+        ><FaDownload />
+        <a href="https://github.com/fluentmoheshwar/useful-tools/releases"
+          >Download</a
+        ></button
+      >
+      <button class="btn ml-3.5"
+        ><FaGithub />
+        <a href="https://github.com/fluentmoheshwar/useful-tools">GitHub</a
+        ></button
+      >
+    </div>
+    <Image
+      src={UsefulToolsImage}
+      style="max-width: 80%; height: auto;"
+      alt="Useful Tools for Windows Screenshot"
+      class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"
+      loading="eager"
+    />
+  </div>
+
+  <div class="grid grid-cols-1 items-center sm:grid-cols-2" id="puja-bloom">
+    <div>
+      <h1 class="p-3.5 pb-0 text-center text-xl sm:text-left sm:text-5xl">
+        Puja Bloom Visual Studio (Code) Theme
+      </h1>
+      <p class="sm:text-md p-3.5 text-justify text-sm">
+        Puja Bloom is a Visual Studio / Visual Studio Code Theme designed for
+        programmers with accessibility and cuteness in mind.
+      </p>
+      <button class="btn ml-3.5"
+        ><FaGithub />
+        <a href="https://github.com/fluentmoheshwar/puja-bloom">GitHub</a
+        ></button
+      >
+      <button class="btn ml-3.5 bg-violet-700"
+        ><BiLogoVisualStudio />
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=fluentmoheshwar.PujaBloom"
+          >Visual Studio</a
+        ></button
+      >
+      <button class="btn ml-3.5 bg-blue-600"
+        ><BiLogoVisualStudio />
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=fluentmoheshwar.puja-bloom"
+          >Visual Studio Code</a
+        ></button
+      >
+      <button class="btn ml-3.5 bg-blue-600"
+        ><BiLogoVisualStudio />
+        <a href="https://open-vsx.org/extension/fluentmoheshwar/puja-bloom"
+          >OpenVSX</a
+        ></button
+      >
+    </div>
+    <Image
+      src={PujaBloomImage}
+      style="max-width: 80%; height: auto;"
+      alt="Puja Bloom Theme"
+      class="m-auto rounded-md border-2 border-pink-800 sm:col-start-2 sm:mt-2"
+      loading="eager"
+    />
+  </div>
+</section>
