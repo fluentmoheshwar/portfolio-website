@@ -22,3 +22,17 @@ body {
 #warning {
   margin-bottom: 5px;
 }
+
+.underline-blue {
+  text-decoration: underline;
+  text-decoration-color: #16449b;
+}
+
+.footer-marquee {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.warning-red {
+  color: #ff0000;
+}

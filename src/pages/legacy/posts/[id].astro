@@ -23,6 +23,8 @@ const { Content } = await render(post);
     <meta name="author" content="Moheshwar Amarnath Biswas">
     <!-- prettier-ignore -->
     <link rel="stylesheet" href="../../style.css">
+    <meta name="keywords" content={post.data.keywords}>
+    <meta name="description" content={post.data.description}>
   </head>
   <body>
     <div id="header">
@@ -45,7 +47,6 @@ const { Content } = await render(post);
     <p>
       Published on {post.data.publishDate.toLocaleDateString()}
     </p>
-    <p style="color: #ff0000">Warning: Images may not display in your browser.</p>
     <Content />
   </div>
 
@@ -122,7 +123,7 @@ const { Content } = await render(post);
         behavior="scroll"
         direction="left"
         scrollamount="10"
-        style="font-weight: bold; font-size: 1.2em"
+        class="footer-marquee"
       >
         <p>
           Under construction! This website is a work in progress and may not be
