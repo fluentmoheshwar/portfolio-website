@@ -1,12 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import CarbonBadge from "./CarbonBadge.astro";
 import greenWeb from "../../assets/images/footer/greenweb.webp";
+import CarbonBadge from "./CarbonBadge.astro";
 ---
 
 <div class="flex-grow"></div>
-<footer class="footer footer-center bg-base-300 text-base-content mt-4 p-4">
-  <div class="place-self-start justify-self-start">
+<footer
+  class="footer bg-base-300 text-base-content sm:footer-horizontal mt-6 items-center p-6"
+>
+  <div>
     <p>
       Copyright © 2023-2025 Moheshwar Amarnath Biswas. Some rights reserved.
     </p>
@@ -26,10 +28,13 @@ import greenWeb from "../../assets/images/footer/greenweb.webp";
       >
     </p>
   </div>
-  <div class="sm:grid-flow-col sm:place-self-center sm:justify-self-end">
+  <div
+    class="flex flex-col items-center justify-center sm:grid-flow-col place-self-center sm:justify-self-end"
+  >
     <a
-      href=`https://www.thegreenwebfoundation.org/green-web-check/?url=${Astro.url.toString()}`
+      href={`https://www.thegreenwebfoundation.org/green-web-check/?url=${Astro.url.toString()}`}
       target="_blank"
+      class="flex justify-center"
     >
       <Image
         src={greenWeb}

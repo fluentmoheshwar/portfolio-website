@@ -21,7 +21,7 @@ const { Content } = await render(post);
   keywords={post.data.keywords}
 >
   <article
-    class="prose lg:prose-lg prose-pre:text-left *:text-center sm:flex sm:flex-col sm:items-center sm:self-center"
+    class="prose lg:prose-lg prose-pre:text-left flex flex-col items-center gap-4 self-center *:text-center"
   >
     <h1>{post.data.title}</h1>
     <p class="not-prose text-xl">{post.data.description}</p>
@@ -32,7 +32,7 @@ const { Content } = await render(post);
     <button
       type="button"
       onclick="share();"
-      class="btn m-auto mt-2 flex"
+      class="btn mt-4 flex"
       aria-label="Share"><FaShare /> Share</button
     >
   </article>
