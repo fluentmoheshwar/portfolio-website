@@ -36,6 +36,7 @@ const posts = await getCollection("posts");
     {
       posts.map((post) => (
         <li>
+          <img src="/legacy/images/new.gif" alt="new">
           <a
             href={`./posts/${post.id}/`}
           >
