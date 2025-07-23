@@ -15,7 +15,7 @@ All layouts are stored in `/src/layouts`
 
 There's nothing special about `src/components/`, but that's where I like to put any Astro/React/Vue/Svelte components.
 
-Blog posts are stored in `src/content/posts`
+Blog posts are stored in `src/data/posts`
 
 Any static assets, like images, can be placed in the `public/` directory.
 
