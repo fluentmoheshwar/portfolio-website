@@ -17,7 +17,7 @@ const posts = await getCollection("posts");
         <li>
           <a
             href={`/posts/${post.id}/`}
-            class="text-xl underline decoration-pink-500 duration-500 hover:underline hover:decoration-sky-500 sm:text-3xl post-title"
+            class="post-title text-xl underline decoration-pink-500 duration-500 hover:underline hover:decoration-sky-500 sm:text-3xl"
           >
             {post.data.title}
           </a>
@@ -30,10 +30,10 @@ const posts = await getCollection("posts");
 
 <script is:inline>
   document.querySelectorAll('a[href^="/posts/"]').forEach((link) => {
-    const postId = link.getAttribute('href').split('/').filter(Boolean).pop();
+    const postId = link.getAttribute("href").split("/").filter(Boolean).pop();
     link.style.viewTransitionName = `post-title-${postId}`;
 
-    link.addEventListener('click', (e) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
       const url = link.href;
 

@@ -23,7 +23,12 @@ const { Content } = await render(post);
   <article
     class="prose lg:prose-lg prose-pre:text-left flex flex-col items-center gap-4 self-center *:text-center"
   >
-    <h1 class="post-title" style={`view-transition-name: post-title-${post.id}`}>{post.data.title}</h1>
+    <h1
+      class="post-title"
+      style={`view-transition-name: post-title-${post.id}`}
+    >
+      {post.data.title}
+    </h1>
     <p class="not-prose text-xl">{post.data.description}</p>
     <p class="not-prose">
       Published on {post.data.publishDate.toLocaleDateString()}
