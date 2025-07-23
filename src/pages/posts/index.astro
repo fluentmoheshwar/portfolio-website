@@ -27,19 +27,3 @@ const posts = await getCollection("posts");
     }
   </ul>
 </MainLayout>
-
-<script is:inline>
-  document.querySelectorAll('a[href^="/posts/"]').forEach((link) => {
-    const postId = link.getAttribute("href").split("/").filter(Boolean).pop();
-    link.style.viewTransitionName = `post-title-${postId}`;
-
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const url = link.href;
-
-      document.startViewTransition(() => {
-        window.location.href = url;
-      });
-    });
-  });
-</script>
