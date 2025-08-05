@@ -31,7 +31,7 @@ import { GoLinkExternal } from "react-icons/go";
       >
     </li>
     <li>
-      <details id="social-dropdown">
+      <details>
         <summary><FaUser /> Social Media</summary>
         <ul class="menu menu-vertical rounded-box bg-base-200">
           <li>
@@ -101,12 +101,3 @@ import { GoLinkExternal } from "react-icons/go";
     </li>
   </ul>
 </nav>
-
-<script is:inline>
-  const details = document.querySelector("#social-dropdown");
-  const summary = details.querySelector("summary");
-
-  summary.addEventListener("blur", () => {
-    details.open = false;
-  });
-</script>
