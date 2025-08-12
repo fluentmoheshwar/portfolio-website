@@ -22,8 +22,8 @@ const posts = await getCollection("posts");
     <div id="header">
       <div id="nav">
         <ul>
-          <li><a href="./" target="_blank">Home </a></li>
-          <li><a href="./posts" target="_blank">Posts </a></li>
+          <li><a href="../" target="_blank">Home </a></li>
+          <li><a href="./" target="_blank">Posts </a></li>
           <li>
             <a href="https://www.facebook.com/fluentmoheshwar" target="_blank"
               >Facebook</a
@@ -38,7 +38,7 @@ const posts = await getCollection("posts");
         <li>
           <img src="/legacy/images/new.gif" alt="new">
           <a
-            href={`./posts/${post.id}/`}
+            href={`./${post.id}/`}
           >
             {post.data.title}
           </a>
