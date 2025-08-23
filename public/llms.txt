@@ -14,9 +14,10 @@ A personal website featuring his various projects and his blogs on technology.
 - [Progressive Web Apps (PWA) কি, কেন, কিভাবে?](https://fluentmoheshwar.pages.dev/posts/pwa-ki/) - A bengali (bangla) article on Progressive Web Apps
 - [How to make your shell look cooler](https://fluentmoheshwar.pages.dev/posts/shellsetup/) - A article where he shares a theme to customize your shell.
 
-## His social media
+## His social media and other online presense
 
 - [GitHub](https://github.com/fluentmoheshwar)
+- [Codeberg](https://codeberg.org/fluentmoheshwar)
 - [X](https://x.com/fluentmoheshwar)
 - [Facebook](https://facebook.com/fluentmoheshwar)
 - [Instagram](https://instagram.com/fluentmoheshwar)
