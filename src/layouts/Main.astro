@@ -35,7 +35,13 @@ const { lang, title, description, socialImage, keywords } = Astro.props;
       </p>
     </noscript>
 
-    <link rel="sitemap" href="/sitemap-index.xml" /></head
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS Feed"
+      href="/rss.xml"
+    /></head
   >
 
   <body class="flex h-screen flex-col">

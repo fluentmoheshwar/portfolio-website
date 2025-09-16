@@ -1,14 +1,24 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import fs from "fs";
 export async function getStaticPaths() {
-  const posts = await getCollection("posts");
+  const posts: CollectionEntry<"posts">[] = await getCollection("posts");
   return posts.map((post) => ({
     params: { id: post.id },
     props: post,
   }));
 }
-const post = Astro.props;
+const post = Astro.props as CollectionEntry<"posts">;
 const { Content } = await render(post);
+// Calculate reading time (assuming 200 words per minute)
+const wordsPerMinute = 200;
+const wordCount = post.body ? post.body.split(/\s+/).length : 0;
+const readingTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
+
+// Get last modified time
+const lastModified = post.filePath
+  ? fs.statSync(post.filePath).mtime
+  : new Date();
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -45,7 +55,9 @@ const { Content } = await render(post);
     <h1>{post.data.title}</h1>
     <p>{post.data.description}</p>
     <p>
-      Published on {post.data.publishDate.toLocaleDateString()}
+      Published on {post.data.publishDate.toLocaleDateString()} • {
+        readingTimeMinutes
+      } min read • Last modified {lastModified.toLocaleDateString()}
     </p>
     <Content />
   </div>

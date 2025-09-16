@@ -32,6 +32,17 @@ const posts = await getCollection("posts");
         </ul>
       </div>
 
+<div class="m-auto mb-6 text-center">
+    <a
+      href="/rss.xml"
+      target="_blank"
+      class="btn btn-outline btn-primary"
+      aria-label="Subscribe to RSS Feed"
+    >
+      📡 Subscribe to RSS Feed
+    </a>
+  </div>
+
       <ul class="m-auto list-disc">
     {
       posts.map((post) => (
