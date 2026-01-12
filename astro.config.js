@@ -7,7 +7,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://fluentmoheshwar.pages.dev",
+  site: "https://moheshwar.com",
   compressHTML: true,
   build: {
     inlineStylesheets: "auto",
