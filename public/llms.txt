@@ -6,15 +6,15 @@ A personal website featuring his various projects and his blogs on technology.
 
 ## Main Sections
 
-- [Blogs](https://fluentmoheshwar.pages.dev/posts/) - Various articles about technology.
+- [Blogs](https://moheshwar.com/posts/) - Various articles about technology.
 
 ## All Blog Articles
 
-- [How to become self taught developer](https://fluentmoheshwar.pages.dev/posts/become-self-taught-developer/) - A article when he shares 21 key points to become a successful self taught developer. It was his personal note based on Sumit Saha's video.
-- [Progressive Web Apps (PWA) কি, কেন, কিভাবে?](https://fluentmoheshwar.pages.dev/posts/pwa-ki/) - A bengali (bangla) article on Progressive Web Apps
-- [How to make your shell look cooler](https://fluentmoheshwar.pages.dev/posts/shellsetup/) - A article where he shares a theme to customize your shell.
+- [How to become self taught developer](https://moheshwar.com/posts/become-self-taught-developer/) - A article when he shares 21 key points to become a successful self taught developer. It was his personal note based on Sumit Saha's video.
+- [Progressive Web Apps (PWA) কি, কেন, কিভাবে?](https://moheshwar.com/posts/pwa-ki/) - A bengali (bangla) article on Progressive Web Apps
+- [How to make your shell look cooler](https://moheshwar.com/posts/shellsetup/) - A article where he shares a theme to customize your shell.
 
-## His social media and other online presense
+## His social media and other online presence
 
 - [GitHub](https://github.com/fluentmoheshwar)
 - [Codeberg](https://codeberg.org/fluentmoheshwar)
@@ -22,10 +22,10 @@ A personal website featuring his various projects and his blogs on technology.
 - [Facebook](https://facebook.com/fluentmoheshwar)
 - [Instagram](https://instagram.com/fluentmoheshwar)
 - [Threads](https://www.threads.com/@fluentmoheshwar/)
-- [Bluesky](https://bsky.app/profile/fluentmoheshwar.bsky.social)
+- [Bluesky](https://bsky.app/profile/moheshwar.com)
 - [Mastodon](https://mastodon.social/@fluentmoheshwar)
 - [YouTube](https://www.youtube.com/@fluentmoheshwar)
 
 ## His legacy website
 
-[Legacy Website](https://fluentmoheshwar.pages.dev/legacy/) - 90s looking website!
+[Legacy Website](https://moheshwar.com/legacy/) - 90s looking website!
