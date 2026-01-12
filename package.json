@@ -12,29 +12,29 @@
   "dependencies": {
     "@astrojs/check": "0.9.6",
     "@astrojs/react": "4.4.2",
-    "@astrojs/rss": "^4.0.12",
+    "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "3.6.0",
-    "@microsoft/clarity": "^1.0.0",
-    "@tailwindcss/vite": "^4.1.11",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@microsoft/clarity": "^1.0.2",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
     "astro": "5.16.6",
-    "react": "^19.1.0",
+    "react": "^19.2.3",
     "react-compiler-runtime": "^19.0.0-beta-ebf51a3-20250411",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.2.3",
     "react-icons": "^5.5.0",
-    "tailwindcss": "^4.1.11",
-    "typescript": "^5.8.3"
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "browserslist": "^4.25.1",
-    "daisyui": "^5.0.46",
-    "lightningcss": "^1.30.1",
-    "prettier": "^3.6.2",
+    "@tailwindcss/typography": "^0.5.19",
+    "browserslist": "^4.28.1",
+    "daisyui": "^5.5.14",
+    "lightningcss": "^1.30.2",
+    "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-sort-imports": "^1.8.8",
-    "prettier-plugin-tailwindcss": "^0.7.1"
+    "prettier-plugin-sort-imports": "^1.8.9",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide"
