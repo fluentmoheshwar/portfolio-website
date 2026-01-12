@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "Astro docs": {
+      "url": "https://mcp.docs.astro.build/mcp",
+      "type": "http"
+    },
+    "daisyUI": {
+      "type": "sse",
+      "url": "https://gitmcp.io/saadeghi/daisyui"
+    }
+  },
+  "inputs": []
+}
