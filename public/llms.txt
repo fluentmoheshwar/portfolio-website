@@ -7,6 +7,7 @@ A personal website featuring his various projects and his blogs on technology.
 ## Main Sections
 
 - [Blogs](https://moheshwar.com/posts/) - Various articles about technology.
+- [Now](https://moheshwar.com/now) - Discover what Moheshwar Amarnath Biswas is currently working on, his latest projects, and interests in software development and coding.
 
 ## All Blog Articles
 
