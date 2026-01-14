@@ -1,5 +1,6 @@
 ---
 import { getCollection, render, type CollectionEntry } from "astro:content";
+import domain from "../../domain.ts";
 import { FaShare } from "react-icons/fa";
 import MainLayout from "../../layouts/Main.astro";
 import fs from "fs";
@@ -29,6 +30,7 @@ const lastModified = post.filePath
   title={post.data.title}
   description={post.data.description}
   socialImage={post.data.socialImage}
+  canonical={`https://${domain}/posts/${post.id}`}
   keywords={post.data.keywords}
 >
   <article

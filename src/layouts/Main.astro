@@ -8,9 +8,10 @@ export interface Props {
   title: string;
   description: string;
   socialImage: string;
+  canonical?: string;
   keywords: string;
 }
-const { lang, title, description, socialImage, keywords } = Astro.props;
+const { lang, title, description, socialImage, canonical, keywords } = Astro.props;
 ---
 
 <!doctype html>
@@ -41,8 +42,9 @@ const { lang, title, description, socialImage, keywords } = Astro.props;
       type="application/rss+xml"
       title="RSS Feed"
       href="/rss.xml"
-    /></head
-  >
+    />
+    <link rel="canonical" href={canonical} />
+  </head>
 
   <body class="flex h-screen flex-col">
     <Navbar />

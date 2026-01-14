@@ -1,10 +1,12 @@
 ---
 import { getCollection } from "astro:content";
+import domain from "../../domain.ts";
 import MainLayout from "../../layouts/Main.astro";
 const posts = await getCollection("posts");
 ---
 
 <MainLayout
+  canonical={`https://${domain}/posts/`}
   lang="en"
   title="Posts"
   description="Posts by Moheshwar Amarnath Biswas"
