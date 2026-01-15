@@ -72,7 +72,8 @@
     "Tapu",
     "thegreenwebfoundation",
     "usefultools",
-    "webp"
+    "webp",
+    "Wikiwand"
   ],
   "cSpell.ignoreRandomStrings": true,
   "tailwindCSS.emmetCompletions": true,
