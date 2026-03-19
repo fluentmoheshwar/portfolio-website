@@ -4,6 +4,7 @@ import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaDownload, FaGithub } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
 import OpenPeriodsImage from "../../../assets/images/home/openperiods.png";
+import DSEScraperImage from "../../../assets/images/home/dsescraper.png";
 import AmarBanglaBhashaImage from "../../../assets/images/home/amarbanglabhasha.png";
 import PujaBloomImage from "../../../assets/images/home/puja_bloom.png";
 import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
@@ -109,6 +110,7 @@ import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
         </div>
       </div>
     </div>
+
     <!-- Amar Bangla Bhasha Card -->
     <div class="card bg-base-100 shadow-xl">
       <figure class="px-4 pt-4">
@@ -124,6 +126,27 @@ import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
             <GoLinkExternal /> Visit
           </a>
           <a href="https://github.com/fluentmoheshwar/amarbanglabhasa" class="btn">
+            <FaGithub /> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- DSE Scraper Card -->
+    <div class="card bg-base-100 shadow-xl">
+      <figure class="px-4 pt-4">
+        <Image src={DSEScraperImage} alt="DSE Scraper Screenshot" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-xl sm:text-2xl">DSE Scraper</h2>
+        <p class="text-justify text-sm sm:text-base">
+          DSE Scraper is a web scraping tool designed to extract data from the Dhaka Stock Exchange (DSE) website for analysis and research purposes.
+        </p>
+        <div class="card-actions mt-2 flex flex-wrap gap-2">
+          <a href="https://dsescraper.moheshwar.com/" class="btn btn-primary">
+            <GoLinkExternal /> Visit
+          </a>
+          <a href="https://github.com/fluentmoheshwar/dse-scraper" class="btn">
             <FaGithub /> GitHub
           </a>
         </div>
