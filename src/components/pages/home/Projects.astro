@@ -2,8 +2,10 @@
 import { Image } from "astro:assets";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaDownload, FaGithub } from "react-icons/fa6";
+import { GoLinkExternal } from "react-icons/go";
+import OpenPeriodsImage from "../../../assets/images/home/openperiods.png";
 import PujaBloomImage from "../../../assets/images/home/puja_bloom.png";
-import TauriWinTools from "../../../assets/images/home/tauriwintools.png";
+import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
 ---
 
 <section class="mx-auto max-w-5xl">
@@ -17,7 +19,7 @@ import TauriWinTools from "../../../assets/images/home/tauriwintools.png";
     <div class="card bg-base-100 shadow-2xl">
       <figure class="px-4 pt-4">
         <Image
-          src={TauriWinTools}
+          src={TauriWinToolsImage}
           alt="TauriWinTools Screenshot"
           loading="eager"
         />
@@ -25,9 +27,9 @@ import TauriWinTools from "../../../assets/images/home/tauriwintools.png";
       <div class="card-body">
         <h2 class="card-title text-xl sm:text-2xl">TauriWinTools</h2>
         <p class="text-justify text-sm sm:text-base">
-          It's a collection of handy tools and shortcuts that will make
-          your Windows experience more efficient and fun. You can tweak your
-          settings or access hidden features with ease.
+          It's a collection of handy tools and shortcuts that will make your
+          Windows experience more efficient and fun. You can tweak your settings
+          or access hidden features with ease.
         </p>
         <div class="card-actions mt-2 flex flex-wrap gap-2">
           <a
@@ -36,7 +38,10 @@ import TauriWinTools from "../../../assets/images/home/tauriwintools.png";
           >
             <FaDownload /> Download
           </a>
-          <a href="https://github.com/fluentmoheshwar/TauriWinTools" class="btn">
+          <a
+            href="https://github.com/fluentmoheshwar/TauriWinTools"
+            class="btn"
+          >
             <FaGithub /> GitHub
           </a>
         </div>
@@ -77,6 +82,28 @@ import TauriWinTools from "../../../assets/images/home/tauriwintools.png";
             class="btn bg-blue-600 text-white"
           >
             <BiLogoVisualStudio /> OpenVSX
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Open Periods Card -->
+    <div class="card bg-base-100 shadow-xl">
+      <figure class="px-4 pt-4">
+        <Image src={OpenPeriodsImage} alt="OpenPeriods Screenshot" />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title text-xl sm:text-2xl">OpenPeriods</h2>
+        <p class="text-justify text-sm sm:text-base">
+          OpenPeriods is a Open Source Browser based Period (menstruation) Tracking System for
+          women written in Svelte.
+        </p>
+        <div class="card-actions mt-2 flex flex-wrap gap-2">
+          <a href="https://openperiods.moheshwar.com/" class="btn btn-primary">
+            <GoLinkExternal /> Visit
+          </a>
+          <a href="https://github.com/fluentmoheshwar/openperiods" class="btn">
+            <FaGithub /> GitHub
           </a>
         </div>
       </div>
