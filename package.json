@@ -14,7 +14,7 @@
     "@astrojs/compiler-rs": "^0.1.4",
     "@astrojs/react": "5.0.0",
     "@astrojs/rss": "4.0.17",
-    "@astrojs/sitemap": "3.7.1",
+    "@astrojs/sitemap": "3.7.2",
     "@microsoft/clarity": "^1.0.2",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.8",
