@@ -13,7 +13,7 @@
     "@astrojs/check": "0.9.8",
     "@astrojs/compiler-rs": "^0.1.4",
     "@astrojs/react": "5.0.3",
-    "@astrojs/rss": "4.0.17",
+    "@astrojs/rss": "4.0.18",
     "@astrojs/sitemap": "3.7.2",
     "@microsoft/clarity": "^1.0.2",
     "@tailwindcss/vite": "^4.1.18",
