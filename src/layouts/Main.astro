@@ -26,6 +26,9 @@ const { lang, title, description, socialImage, canonical, keywords } =
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    <link rel="preconnect" href="https://www.clarity.ms">
+    <link rel="preconnect" href="https://scripts.clarity.ms">
+    <link rel="preload" href="https://keepandroidopen.org/banner.js" as="script">
     <SocialTags
       title={title}
       description={description}
@@ -56,6 +59,6 @@ const { lang, title, description, socialImage, canonical, keywords } =
 
       Clarity.init("pojiqcvx89");
     </script>
-    <script src="https://keepandroidopen.org/banner.js"></script>
+    <script src="https://keepandroidopen.org/banner.js" defer async></script>
   </body>
 </html>
