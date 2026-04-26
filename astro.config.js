@@ -5,6 +5,8 @@ import browserslist from "browserslist";
 import sitemap from "@astrojs/sitemap";
 import react from "@astrojs/react";
 
+import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://moheshwar.com",
@@ -12,7 +14,7 @@ export default defineConfig({
   build: {
     inlineStylesheets: "auto",
   },
-  integrations: [sitemap(), react()],
+  integrations: [sitemap(), react(), showTailwindcssBreakpoint()],
   vite: {
     plugins: [tailwindcss()],
     css: {
