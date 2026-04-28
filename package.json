@@ -35,7 +35,7 @@
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-sort-imports": "^1.8.9",
-    "prettier-plugin-tailwindcss": "^0.7.2"
+    "prettier-plugin-tailwindcss": "^0.8.0"
   },
   "trustedDependencies": [
     "@tailwindcss/oxide"
