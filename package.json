@@ -31,7 +31,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "astro-show-tailwindcss-breakpoint": "^2.0.0",
     "browserslist": "^4.28.2",
-    "daisyui": "^5.5.14",
+    "daisyui": "^5.5.19",
     "lightningcss": "^1.32.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
