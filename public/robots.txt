@@ -1,3 +1,8 @@
 User-Agent: *
 Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Sitemap: https://moheshwar.com/sitemap-index.xml
+
+User-Agent: *
+Content-Signal: /posts/ ai-train=no, search=yes, ai-input=yes
+Allow: /posts/
