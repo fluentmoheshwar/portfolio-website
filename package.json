@@ -28,7 +28,7 @@
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "astro-show-tailwindcss-breakpoint": "^2.0.0",
     "browserslist": "^4.28.2",
     "daisyui": "^5.5.20",
