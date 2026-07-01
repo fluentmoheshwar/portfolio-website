@@ -33,7 +33,7 @@
     "browserslist": "^4.28.2",
     "daisyui": "^5.5.23",
     "lightningcss": "^1.32.0",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-sort-imports": "^1.8.11",
     "prettier-plugin-tailwindcss": "^0.8.0"
