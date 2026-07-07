@@ -13,6 +13,13 @@ export interface Props {
 }
 const { lang, title, description, socialImage, canonical, keywords } =
   Astro.props;
+
+// Extend Window typing so `window.secrets` is allowed
+declare global {
+  interface Window {
+    secrets?: { girlfriend: string; wife: string };
+  }
+}
 ---
 
 <!doctype html>
@@ -26,6 +33,8 @@ const { lang, title, description, socialImage, canonical, keywords } =
     <meta name="title" content={title} />
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    <meta name="girlfriend" content="Somudre Sarkar" />
+    <meta name="wife" content="Somudre Sarkar" />
     <link rel="preconnect" href="https://www.clarity.ms" />
     <link rel="preconnect" href="https://scripts.clarity.ms" />
     <link
@@ -62,6 +71,12 @@ const { lang, title, description, socialImage, canonical, keywords } =
       import Clarity from "@microsoft/clarity";
 
       Clarity.init("pojiqcvx89");
+
+      const secrets = {
+        girlfriend: "Somudre Sarkar",
+        wife: "Somudre Sarkar",
+      };
+      window.secrets = secrets;
     </script>
     <script src="https://keepandroidopen.org/banner.js" defer async is:inline
     ></script>
