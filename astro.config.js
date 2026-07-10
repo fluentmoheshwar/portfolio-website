@@ -32,7 +32,6 @@ export default defineConfig({
     },
     experimental: {
       responsiveImages: true,
-      rustCompiler: true,
     },
   },
 });
