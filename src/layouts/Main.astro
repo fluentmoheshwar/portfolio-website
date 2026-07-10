@@ -2,6 +2,11 @@
 import Footer from "../components/layouts/Footer.astro";
 import Navbar from "../components/layouts/Navbar.astro";
 import SocialTags from "../components/layouts/SocialTags.astro";
+import SchemaOrg from "../components/schemas/SchemaOrg.astro";
+import {
+  createPersonSchema,
+  createWebsiteSchema,
+} from "../lib/schemas";
 import "../styles/index.css";
 export interface Props {
   lang: string;
@@ -47,6 +52,8 @@ declare global {
       description={description}
       socialImage={socialImage}
     />
+    <SchemaOrg schema={createPersonSchema()} />
+    <SchemaOrg schema={createWebsiteSchema()} />
     <noscript>
       <p class="m-auto bg-pink-800 p-5 text-center text-2xl text-white">
         JavaScript is disabled! Some features may not function correctly!

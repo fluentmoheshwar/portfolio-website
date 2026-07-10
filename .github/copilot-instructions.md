@@ -165,6 +165,26 @@ bun run prettier --check .
 - Legacy post-processing handles backward compatibility for archived content
 - Static site generation (no server required)
 
+## Search Engine Optimization (SEO) & Rich Results
+
+The site implements **schema.org JSON-LD** structured data for Google Rich Results:
+
+- **Person Schema** - On all pages via `Main.astro` layout, marking Moheshwar as a Person with contact info, job title, and social profiles
+- **WebSite Schema** - On all pages, providing site name, description, and creator info
+- **BlogPosting Schema** - Automatically on each blog post with headline, author, publication date, and image
+- **CollectionPage Schema** - On the home page for projects, describing the collection of software applications
+- **BreadcrumbList Schema** - On the posts index page for navigation hierarchy
+
+**Schema Components:**
+- `src/components/schemas/SchemaOrg.astro` - Renders JSON-LD scripts
+- `src/lib/schemas.ts` - Schema creation functions for all types
+- Automatically injected into page `<head>` via layouts and page components
+
+**Adding Schemas to New Pages:**
+1. Import `SchemaOrg` component and desired schema function
+2. Call the function with relevant data
+3. Add `<SchemaOrg schema={createXxxSchema(...)} />` in the component
+
 ## Troubleshooting
 
 **Image not showing after build?**  
@@ -175,3 +195,6 @@ Ensure you're using Bun version 1.0+ and all Prettier plugins are installed. Run
 
 **TypeScript errors?**  
 Run `bun run astro check` to see detailed diagnostics. Check that imports use correct relative paths and that component props are typed.
+
+**Schema validation issues?**  
+Test schemas with [Google's Rich Results Test](https://search.google.com/test/rich-results) or [Schema.org validator](https://validator.schema.org/)

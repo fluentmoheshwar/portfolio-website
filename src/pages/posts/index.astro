@@ -2,6 +2,8 @@
 import { getCollection } from "astro:content";
 import domain from "../../domain.ts";
 import MainLayout from "../../layouts/Main.astro";
+import SchemaOrg from "../../components/schemas/SchemaOrg.astro";
+import { createBreadcrumbSchema } from "../../lib/schemas";
 const posts = await getCollection("posts");
 ---
 
@@ -13,6 +15,12 @@ const posts = await getCollection("posts");
   socialImage="/images/social/home.png"
   keywords="posts, blog, articles, Moheshwar Amarnath Biswas"
 >
+  <SchemaOrg
+    schema={createBreadcrumbSchema([
+      { name: "Home", url: `https://${domain}` },
+      { name: "Posts" },
+    ])}
+  />
   <h1 class="p-5 text-center text-3xl">Posts by Moheshwar Amarnath Biswas</h1>
   <div class="m-auto mb-6 text-center">
     <a

@@ -50,17 +50,17 @@ const lastModified = post.filePath
         </ul>
       </div>
 
-      <div
-  >
-    <h1>{post.data.title}</h1>
-    <p>{post.data.description}</p>
-    <p>
-      Published on {post.data.publishDate.toLocaleDateString()} • {
-        readingTimeMinutes
-      } min read • Last modified {lastModified.toLocaleDateString()}
-    </p>
-    <Content />
-  </div>
+      <div>
+        <h1>{post.data.title}</h1>
+        <p>{post.data.description}</p>
+        <p>
+          Published on {post.data.publishDate.toLocaleDateString()} • {
+            readingTimeMinutes
+          } min read • Last modified {lastModified.toLocaleDateString()}
+        </p>
+        <Content />
+      </div>
+    </div>
 
     <div id="footer">
       <center>

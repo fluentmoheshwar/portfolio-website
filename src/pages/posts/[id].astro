@@ -3,6 +3,8 @@ import { getCollection, render, type CollectionEntry } from "astro:content";
 import domain from "../../domain.ts";
 import { FaShare } from "react-icons/fa";
 import MainLayout from "../../layouts/Main.astro";
+import SchemaOrg from "../../components/schemas/SchemaOrg.astro";
+import { createBlogPostingSchema } from "../../lib/schemas";
 import fs from "fs";
 export async function getStaticPaths() {
   const posts: CollectionEntry<"posts">[] = await getCollection("posts");
@@ -23,6 +25,8 @@ const readingTimeMinutes = Math.ceil(wordCount / wordsPerMinute);
 const lastModified = post.filePath
   ? fs.statSync(post.filePath).mtime
   : new Date();
+
+const canonicalUrl = `https://${domain}/posts/${post.id}`;
 ---
 
 <MainLayout
@@ -30,9 +34,18 @@ const lastModified = post.filePath
   title={post.data.title}
   description={post.data.description}
   socialImage={post.data.socialImage}
-  canonical={`https://${domain}/posts/${post.id}`}
+  canonical={canonicalUrl}
   keywords={post.data.keywords}
 >
+  <SchemaOrg
+    schema={createBlogPostingSchema(
+      post.data.title,
+      post.data.description,
+      `https://${domain}${post.data.socialImage}`,
+      post.data.publishDate,
+      canonicalUrl
+    )}
+  />
   <article
     class="prose lg:prose-lg prose-pre:text-left *:text-center sm:flex sm:flex-col sm:items-center sm:gap-4 sm:self-center"
   >
