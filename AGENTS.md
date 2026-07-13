@@ -1,1 +1,1 @@
-z:/portfolio-website/.github/copilot-instructions.md
+.github/copilot-instructions.md
