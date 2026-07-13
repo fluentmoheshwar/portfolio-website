@@ -41,7 +41,9 @@ const canonicalUrl = `https://${domain}/posts/${post.id}`;
       post.data.description,
       `https://${domain}${post.data.socialImage}`,
       post.data.publishDate,
-      canonicalUrl
+      canonicalUrl,
+      lastModified,
+      post.body ? post.body.substring(0, 5000) : undefined
     ),
   ]}
 >

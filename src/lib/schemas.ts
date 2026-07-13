@@ -37,7 +37,10 @@ export interface BlogPostingSchema {
   headline: string;
   description: string;
   image: string;
+  url: string;
   datePublished: string;
+  dateModified: string;
+  articleBody?: string;
   author: {
     "@type": string;
     name: string;
@@ -147,7 +150,9 @@ export function createBlogPostingSchema(
   description: string,
   socialImage: string,
   publishDate: Date,
-  canonicalUrl: string
+  canonicalUrl: string,
+  lastModified?: Date,
+  articleBody?: string
 ): BlogPostingSchema {
   return {
     "@context": "https://schema.org",
@@ -155,7 +160,10 @@ export function createBlogPostingSchema(
     headline: title,
     description: description,
     image: socialImage,
+    url: canonicalUrl,
     datePublished: publishDate.toISOString(),
+    dateModified: (lastModified || publishDate).toISOString(),
+    ...(articleBody && { articleBody }),
     author: {
       "@type": "Person",
       name: "Moheshwar Amarnath Biswas",
