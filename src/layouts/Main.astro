@@ -15,8 +15,9 @@ export interface Props {
   socialImage: string;
   canonical?: string;
   keywords: string;
+  additionalSchemas?: Record<string, unknown>[];
 }
-const { lang, title, description, socialImage, canonical, keywords } =
+const { lang, title, description, socialImage, canonical, keywords, additionalSchemas = [] } =
   Astro.props;
 
 // Extend Window typing so `window.secrets` is allowed
@@ -54,6 +55,9 @@ declare global {
     />
     <SchemaOrg schema={createPersonSchema()} />
     <SchemaOrg schema={createWebsiteSchema()} />
+    {additionalSchemas.map((schema) => (
+      <SchemaOrg schema={schema} />
+    ))}
     <noscript>
       <p class="m-auto bg-pink-800 p-5 text-center text-2xl text-white">
         JavaScript is disabled! Some features may not function correctly!

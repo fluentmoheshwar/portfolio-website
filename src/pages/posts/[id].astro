@@ -3,7 +3,6 @@ import { getCollection, render, type CollectionEntry } from "astro:content";
 import domain from "../../domain.ts";
 import { FaShare } from "react-icons/fa";
 import MainLayout from "../../layouts/Main.astro";
-import SchemaOrg from "../../components/schemas/SchemaOrg.astro";
 import { createBlogPostingSchema } from "../../lib/schemas";
 import fs from "fs";
 export async function getStaticPaths() {
@@ -36,16 +35,16 @@ const canonicalUrl = `https://${domain}/posts/${post.id}`;
   socialImage={post.data.socialImage}
   canonical={canonicalUrl}
   keywords={post.data.keywords}
->
-  <SchemaOrg
-    schema={createBlogPostingSchema(
+  additionalSchemas={[
+    createBlogPostingSchema(
       post.data.title,
       post.data.description,
       `https://${domain}${post.data.socialImage}`,
       post.data.publishDate,
       canonicalUrl
-    )}
-  />
+    ),
+  ]}
+>
   <article
     class="prose lg:prose-lg prose-pre:text-left *:text-center sm:flex sm:flex-col sm:items-center sm:gap-4 sm:self-center"
   >
