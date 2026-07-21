@@ -25,7 +25,7 @@ const lastModified = post.filePath
   ? fs.statSync(post.filePath).mtime
   : new Date();
 
-const canonicalUrl = `https://${domain}/posts/${post.id}`;
+const canonicalUrl = `https://${domain}/posts/${post.id}/`;
 ---
 
 <MainLayout
@@ -43,7 +43,7 @@ const canonicalUrl = `https://${domain}/posts/${post.id}`;
       post.data.publishDate,
       canonicalUrl,
       lastModified,
-      post.body ? post.body.substring(0, 5000) : undefined
+      post.body ? post.body.substring(0, 5000) : undefined,
     ),
   ]}
 >
