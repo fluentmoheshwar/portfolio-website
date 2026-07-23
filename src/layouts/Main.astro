@@ -58,8 +58,8 @@ declare global {
       description={description}
       socialImage={socialImage}
     />
-    <SchemaOrg schema={createPersonSchema()} />
-    <SchemaOrg schema={createWebsiteSchema()} />
+    <SchemaOrg schema={createPersonSchema() as unknown as Record<string, unknown>} />
+    <SchemaOrg schema={createWebsiteSchema() as unknown as Record<string, unknown>} />
     {additionalSchemas.map((schema) => <SchemaOrg schema={schema} />)}
     <noscript>
       <p class="m-auto bg-pink-800 p-5 text-center text-2xl text-white">

@@ -21,7 +21,14 @@ const projectSchemaData = projects.map((project) => ({
 ---
 
 <section class="mx-auto max-w-5xl">
-  <SchemaOrg schema={createCollectionPageSchema(projectSchemaData)} />
+  <SchemaOrg
+    schema={
+      createCollectionPageSchema(projectSchemaData) as unknown as Record<
+        string,
+        unknown
+      >
+    }
+  />
   <h2
     class="mb-3 text-center text-2xl underline decoration-pink-500 sm:text-3xl"
   >

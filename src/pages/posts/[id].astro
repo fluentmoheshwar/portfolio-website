@@ -37,7 +37,8 @@ const canonicalUrl = `https://${domain}/posts/${post.id}/`;
   canonical={canonicalUrl}
   keywords={post.data.keywords}
   additionalSchemas={[
-    createBlogPostingSchema(
+    {
+      ...createBlogPostingSchema(
       post.data.title,
       post.data.description,
       `https://${domain}${post.data.socialImage}`,
@@ -45,7 +46,8 @@ const canonicalUrl = `https://${domain}/posts/${post.id}/`;
       canonicalUrl,
       lastModified,
       post.body ? post.body.substring(0, 5000) : undefined,
-    ),
+      ),
+    },
   ]}
 >
   <article
