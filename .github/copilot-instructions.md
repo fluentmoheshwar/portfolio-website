@@ -5,6 +5,7 @@
 **Package Manager:** Bun (`bun` command, not `npm`)
 
 **Key Commands:**
+
 - `bun run dev` - Start dev server at localhost:3000
 - `bun run build` - Build for production (includes legacy HTML post-processing)
 - `bun run astro check` - Type-check Astro files (use this instead of running full build)
@@ -176,11 +177,13 @@ The site implements **schema.org JSON-LD** structured data for Google Rich Resul
 - **BreadcrumbList Schema** - On the posts index page for navigation hierarchy
 
 **Schema Components:**
+
 - `src/components/schemas/SchemaOrg.astro` - Renders JSON-LD scripts
 - `src/lib/schemas.ts` - Schema creation functions for all types
 - Automatically injected into page `<head>` via layouts and page components
 
 **Adding Schemas to New Pages:**
+
 1. Import `SchemaOrg` component and desired schema function
 2. Call the function with relevant data
 3. Add `<SchemaOrg schema={createXxxSchema(...)} />` in the component

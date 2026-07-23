@@ -1,9 +1,11 @@
 ### drawer
+
 Drawer is a grid layout that can show/hide a sidebar on the left or right side of the page
 
 [drawer docs](https://daisyui.com/components/drawer/)
 
 #### Class names
+
 - component: `drawer`
 - part: `drawer-toggle`, `drawer-content`, `drawer-side`, `drawer-overlay`
 - placement: `drawer-end`
@@ -11,6 +13,7 @@ Drawer is a grid layout that can show/hide a sidebar on the left or right side o
 - variant: `is-drawer-open:`, `is-drawer-close:`
 
 #### Syntax
+
 ```html
 <div class="drawer {MODIFIER}">
   <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -18,19 +21,25 @@ Drawer is a grid layout that can show/hide a sidebar on the left or right side o
   <div class="drawer-side">{SIDEBAR}</div>
 </div>
 ```
+
 where {CONTENT} can be navbar, site content, footer, etc
 and {SIDEBAR} can be a menu like:
+
 ```html
-<ul class="menu p-4 w-80 min-h-full bg-base-100 text-base-content">
+<ul class="menu bg-base-100 text-base-content min-h-full w-80 p-4">
   <li><a>Item 1</a></li>
   <li><a>Item 2</a></li>
 </ul>
 ```
+
 To open/close the drawer, use a label that points to the `drawer-toggle` input:
+
 ```html
 <label for="my-drawer" class="btn drawer-button">Open/close drawer</label>
 ```
+
 Example: This sidebar is always visible on large screen, can be toggled on small screen:
+
 ```html
 <div class="drawer lg:drawer-open">
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -41,7 +50,11 @@ Example: This sidebar is always visible on large screen, can be toggled on small
     </label>
   </div>
   <div class="drawer-side">
-    <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+    <label
+      for="my-drawer-3"
+      aria-label="close sidebar"
+      class="drawer-overlay"
+    ></label>
     <ul class="menu bg-base-200 min-h-full w-80 p-4">
       <!-- Sidebar content here -->
       <li><button>Sidebar Item 1</button></li>
@@ -52,6 +65,7 @@ Example: This sidebar is always visible on large screen, can be toggled on small
 ```
 
 Example: This sidebar is always visible. When it's close we only see icons, when it's open we see icons and text
+
 ```html
 <div class="drawer lg:drawer-open">
   <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
@@ -59,28 +73,46 @@ Example: This sidebar is always visible. When it's close we only see icons, when
     <!-- Page content here -->
   </div>
   <div class="drawer-side is-drawer-close:overflow-visible">
-    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-    <div class="is-drawer-close:w-14 is-drawer-open:w-64 bg-base-200 flex flex-col items-start min-h-full">
+    <label
+      for="my-drawer-4"
+      aria-label="close sidebar"
+      class="drawer-overlay"
+    ></label>
+    <div
+      class="is-drawer-close:w-14 is-drawer-open:w-64 bg-base-200 flex min-h-full flex-col items-start"
+    >
       <!-- Sidebar content here -->
       <ul class="menu w-full grow">
         <!-- list item -->
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Homepage">
+          <button
+            class="is-drawer-close:tooltip is-drawer-close:tooltip-right"
+            data-tip="Homepage"
+          >
             {ICON_HERE}
             <span class="is-drawer-close:hidden">Homepage</span>
           </button>
         </li>
         <!-- list item -->
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Settings">
+          <button
+            class="is-drawer-close:tooltip is-drawer-close:tooltip-right"
+            data-tip="Settings"
+          >
             {ICON_HERE}
             <span class="is-drawer-close:hidden">Settings</span>
           </button>
         </li>
       </ul>
       <!-- button to open/close drawer -->
-      <div class="m-2 is-drawer-close:tooltip is-drawer-close:tooltip-right" data-tip="Open">
-        <label for="my-drawer-4" class="btn btn-ghost btn-circle drawer-button is-drawer-open:rotate-y-180">
+      <div
+        class="is-drawer-close:tooltip is-drawer-close:tooltip-right m-2"
+        data-tip="Open"
+      >
+        <label
+          for="my-drawer-4"
+          class="btn btn-ghost btn-circle drawer-button is-drawer-open:rotate-y-180"
+        >
           {ICON_HERE}
         </label>
       </div>
@@ -90,6 +122,7 @@ Example: This sidebar is always visible. When it's close we only see icons, when
 ```
 
 #### Rules
+
 - {MODIFIER} is optional and can have one of the modifier/placement class names
 - `id` is required for the `drawer-toggle` input. change `my-drawer` to a unique id according to your needs
 - `lg:drawer-open` can be used to make sidebar visible on larger screens

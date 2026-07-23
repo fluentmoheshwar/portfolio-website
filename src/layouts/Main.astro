@@ -3,11 +3,9 @@ import Footer from "../components/layouts/Footer.astro";
 import Navbar from "../components/layouts/Navbar.astro";
 import SocialTags from "../components/layouts/SocialTags.astro";
 import SchemaOrg from "../components/schemas/SchemaOrg.astro";
-import {
-  createPersonSchema,
-  createWebsiteSchema,
-} from "../lib/schemas";
+import { createPersonSchema, createWebsiteSchema } from "../lib/schemas";
 import "../styles/index.css";
+
 export interface Props {
   lang: string;
   title: string;
@@ -17,8 +15,15 @@ export interface Props {
   keywords: string;
   additionalSchemas?: Record<string, unknown>[];
 }
-const { lang, title, description, socialImage, canonical, keywords, additionalSchemas = [] } =
-  Astro.props;
+const {
+  lang,
+  title,
+  description,
+  socialImage,
+  canonical,
+  keywords,
+  additionalSchemas = [],
+} = Astro.props;
 
 // Extend Window typing so `window.secrets` is allowed
 declare global {
@@ -55,9 +60,7 @@ declare global {
     />
     <SchemaOrg schema={createPersonSchema()} />
     <SchemaOrg schema={createWebsiteSchema()} />
-    {additionalSchemas.map((schema) => (
-      <SchemaOrg schema={schema} />
-    ))}
+    {additionalSchemas.map((schema) => <SchemaOrg schema={schema} />)}
     <noscript>
       <p class="m-auto bg-pink-800 p-5 text-center text-2xl text-white">
         JavaScript is disabled! Some features may not function correctly!

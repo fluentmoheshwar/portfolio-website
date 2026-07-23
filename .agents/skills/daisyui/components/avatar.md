@@ -1,13 +1,16 @@
 ### avatar
+
 Avatars are used to show a thumbnail
 
 [avatar docs](https://daisyui.com/components/avatar/)
 
 #### Class names
+
 - component: `avatar`, `avatar-group`
 - modifier: `avatar-online`, `avatar-offline`, `avatar-placeholder`
 
 #### Syntax
+
 ```html
 <div class="avatar {MODIFIER}">
   <div>
@@ -17,6 +20,7 @@ Avatars are used to show a thumbnail
 ```
 
 #### Rules
+
 - {MODIFIER} is optional and can have one of the modifier class names
 - Use `avatar-group` for containing multiple avatars
 - You can set custom sizes using `w-*` and `h-*`

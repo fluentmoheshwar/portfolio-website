@@ -28,6 +28,7 @@
     "typescript": "^7.0.2"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@tailwindcss/typography": "^0.5.20",
     "astro-show-tailwindcss-breakpoint": "^2.0.0",
     "browserslist": "^4.28.6",
@@ -35,7 +36,6 @@
     "lightningcss": "^1.32.0",
     "prettier": "^3.9.4",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-sort-imports": "^1.8.11",
     "prettier-plugin-tailwindcss": "^0.8.1"
   },
   "trustedDependencies": [

@@ -1,16 +1,20 @@
 ### swap
+
 Swap allows you to toggle the visibility of two elements using a checkbox or a class name
 
 [swap docs](https://daisyui.com/components/swap/)
 
 #### Class Names:
+
 - Component: `swap`
 - Part: `swap-on`, `swap-off`, `swap-indeterminate`
 - Modifier: `swap-active`
 - Style: `swap-rotate`, `swap-flip`
 
 #### Syntax
+
 Using checkbox
+
 ```html
 <label class="swap {MODIFIER}">
   <input type="checkbox" />
@@ -20,6 +24,7 @@ Using checkbox
 ```
 
 Using class name
+
 ```html
 <div class="swap {MODIFIER}">
   <div class="swap-on">{content when active}</div>
@@ -28,6 +33,7 @@ Using class name
 ```
 
 #### Rules
+
 - {MODIFIER} is optional and can have one of the modifier/style class names
 - Use only a hidden checkbox to control swap state or add/remove the `swap-active` class using JS to control state
 - To show something when the checkbox is indeterminate, use `swap-indeterminate` class

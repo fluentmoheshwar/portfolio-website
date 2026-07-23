@@ -1,11 +1,10 @@
-import { browserslistToTargets } from "lightningcss";
+import react from "@astrojs/react";
+import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
 import { defineConfig } from "astro/config";
 import browserslist from "browserslist";
-import sitemap from "@astrojs/sitemap";
-import react from "@astrojs/react";
-
-import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
+import { browserslistToTargets } from "lightningcss";
 
 // https://astro.build/config
 export default defineConfig({

@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import domain from "../../domain.ts";
 import MainLayout from "../../layouts/Main.astro";
 import { createBreadcrumbSchema } from "../../lib/schemas";
+
 const posts = await getCollection("posts");
 ---
 

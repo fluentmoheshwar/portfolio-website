@@ -152,7 +152,7 @@ export function createBlogPostingSchema(
   publishDate: Date,
   canonicalUrl: string,
   lastModified?: Date,
-  articleBody?: string
+  articleBody?: string,
 ): BlogPostingSchema {
   return {
     "@context": "https://schema.org",
@@ -192,7 +192,7 @@ export function createSoftwareApplicationSchema(
   description: string,
   url: string,
   image?: string,
-  applicationCategory: string = "DeveloperApplication"
+  applicationCategory: string = "DeveloperApplication",
 ): SoftwareApplicationSchema {
   return {
     "@context": "https://schema.org",
@@ -213,7 +213,7 @@ export function createSoftwareApplicationSchema(
  * Creates a Breadcrumb schema for navigation
  */
 export function createBreadcrumbSchema(
-  items: Array<{ name: string; url?: string }>
+  items: Array<{ name: string; url?: string }>,
 ): BreadcrumbSchema {
   return {
     "@context": "https://schema.org",
@@ -236,7 +236,7 @@ export function createCollectionPageSchema(
     description: string;
     url?: string;
     image?: string;
-  }>
+  }>,
 ): CollectionPageSchema {
   return {
     "@context": "https://schema.org",

@@ -3,14 +3,14 @@ import { Image } from "astro:assets";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { FaDownload, FaGithub } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
-import SchemaOrg from "../../schemas/SchemaOrg.astro";
-import { projects } from "../../../data/projects";
-import { createCollectionPageSchema } from "../../../lib/schemas";
-import OpenPeriodsImage from "../../../assets/images/home/openperiods.png";
-import DSEScraperImage from "../../../assets/images/home/dsescraper.png";
 import AmarBanglaBhashaImage from "../../../assets/images/home/amarbanglabhasha.png";
+import DSEScraperImage from "../../../assets/images/home/dsescraper.png";
+import OpenPeriodsImage from "../../../assets/images/home/openperiods.png";
 import PujaBloomImage from "../../../assets/images/home/puja_bloom.png";
 import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
+import { projects } from "../../../data/projects";
+import { createCollectionPageSchema } from "../../../lib/schemas";
+import SchemaOrg from "../../schemas/SchemaOrg.astro";
 
 const projectSchemaData = projects.map((project) => ({
   name: project.name,

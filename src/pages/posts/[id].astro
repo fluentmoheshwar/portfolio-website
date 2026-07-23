@@ -1,10 +1,11 @@
 ---
+import fs from "fs";
 import { getCollection, render, type CollectionEntry } from "astro:content";
-import domain from "../../domain.ts";
 import { FaShare } from "react-icons/fa";
+import domain from "../../domain.ts";
 import MainLayout from "../../layouts/Main.astro";
 import { createBlogPostingSchema } from "../../lib/schemas";
-import fs from "fs";
+
 export async function getStaticPaths() {
   const posts: CollectionEntry<"posts">[] = await getCollection("posts");
   return posts.map((post) => ({
