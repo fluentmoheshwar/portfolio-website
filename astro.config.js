@@ -8,7 +8,7 @@ import { browserslistToTargets } from "lightningcss";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://moheshwar.com",
+  site: `https://${domain}`,
   compressHTML: true,
   build: {
     inlineStylesheets: "auto",

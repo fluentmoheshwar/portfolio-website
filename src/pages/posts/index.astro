@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
-import domain from "../../domain.ts";
 import MainLayout from "../../layouts/Main.astro";
+import domain from "../../lib/domain.ts";
 import { createBreadcrumbSchema } from "../../lib/schemas";
 
 const posts = await getCollection("posts");
@@ -18,7 +18,7 @@ const posts = await getCollection("posts");
     createBreadcrumbSchema([
       { name: "Home", url: `https://${domain}` },
       { name: "Posts" },
-    ]) as unknown as Record<string, unknown>,
+    ]) as unknown as Record,
   ]}
 >
   <h1 class="p-5 text-center text-3xl">Posts by Moheshwar Amarnath Biswas</h1>

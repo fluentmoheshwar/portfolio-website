@@ -2,7 +2,7 @@
 import fs from "fs";
 import { getCollection, render, type CollectionEntry } from "astro:content";
 import { FaShare } from "react-icons/fa";
-import domain from "../../domain.ts";
+import domain from "../../lib/domain.ts";
 import MainLayout from "../../layouts/Main.astro";
 import { createBlogPostingSchema } from "../../lib/schemas";
 
@@ -39,13 +39,13 @@ const canonicalUrl = `https://${domain}/posts/${post.id}/`;
   additionalSchemas={[
     {
       ...createBlogPostingSchema(
-      post.data.title,
-      post.data.description,
-      `https://${domain}${post.data.socialImage}`,
-      post.data.publishDate,
-      canonicalUrl,
-      lastModified,
-      post.body ? post.body.substring(0, 5000) : undefined,
+        post.data.title,
+        post.data.description,
+        `https://${domain}${post.data.socialImage}`,
+        post.data.publishDate,
+        canonicalUrl,
+        lastModified,
+        post.body ? post.body.substring(0, 5000) : undefined,
       ),
     },
   ]}

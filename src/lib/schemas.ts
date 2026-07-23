@@ -2,6 +2,8 @@
  * Schema.org JSON-LD schemas for Google Rich Results
  */
 
+import domain from "./domain.ts"
+
 export interface PersonSchema {
   "@context": string;
   "@type": string;
@@ -109,8 +111,8 @@ export function createPersonSchema(): PersonSchema {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Moheshwar Amarnath Biswas",
-    url: "https://moheshwar.com",
-    image: "https://moheshwar.com/social_images/home.png",
+    url: `https://${domain}`,
+    image: `https://${domain}/social_images/home.png`,
     description:
       "Software developer specializing in Tailwind CSS and TypeScript, with expertise in full-stack web development using Node.js and Express.js.",
     sameAs: [
@@ -131,10 +133,10 @@ export function createWebsiteSchema(): WebsiteSchema {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Moheshwar Amarnath Biswas Portfolio",
-    url: "https://moheshwar.com",
+    url: `https://${domain}`,
     description:
       "Portfolio of Moheshwar Amarnath Biswas showcasing projects, skills, and blog posts on web development, AI, and software engineering.",
-    image: "https://moheshwar.com/social_images/home.png",
+    image: `https://${domain}/social_images/home.png`,
     creator: {
       "@type": "Person",
       name: "Moheshwar Amarnath Biswas",
@@ -167,14 +169,14 @@ export function createBlogPostingSchema(
     author: {
       "@type": "Person",
       name: "Moheshwar Amarnath Biswas",
-      url: "https://moheshwar.com",
+      url: `https://${domain}`,
     },
     publisher: {
       "@type": "Organization",
       name: "Moheshwar Amarnath Biswas",
       logo: {
         "@type": "ImageObject",
-        url: "https://moheshwar.com/social_images/home.png",
+        url: `https://${domain}/social_images/home.png`,
       },
     },
     mainEntityOfPage: {
@@ -243,7 +245,7 @@ export function createCollectionPageSchema(
     "@type": "CollectionPage",
     name: "Projects by Moheshwar Amarnath Biswas",
     description: "A collection of software projects and applications",
-    url: "https://moheshwar.com",
+    url: `https://${domain}`,
     mainEntity: items.map((item) => ({
       "@type": "CreativeWork" as const,
       ...item,
