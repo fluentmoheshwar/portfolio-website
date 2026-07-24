@@ -12,9 +12,18 @@ This file is the entry point for AI coding agents working in this repository. It
 
 **Package Manager:** Bun (`bun` command, not `npm`)
 
+When starting the dev server, use background mode:
+
+```bash
+bun run astro dev --background
+```
+
+Manage the background server with bun run astro dev stop, bun run astro dev status, and bun run astro dev logs.
+
 **Key Commands:**
 
 - `bun run dev` - Start dev server at localhost:3000
+- `bun run astro dev --background` - Start dev server at localhost:3000
 - `bun run build` - Build for production (includes legacy HTML post-processing)
 - `bun run astro check` - Type-check Astro files (use this instead of running full build)
 - `bun run prettier -w .` - Format all files with Prettier
