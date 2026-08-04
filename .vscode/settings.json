@@ -27,7 +27,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "json.format.enable": true,
-  "javascript.format.enable": true,
+  "js/ts.format.enabled": true,
   // spell check
   "cSpell.enabledFileTypes": {
     "astro": true
@@ -67,7 +67,9 @@
     "prerender",
     "Puja",
     "pwsh",
+    "Sarkar",
     "Satkhira",
+    "Somudre",
     "tailwindcss",
     "Tapu",
     "thegreenwebfoundation",
