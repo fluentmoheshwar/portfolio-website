@@ -6,4 +6,8 @@ export interface Props {
 const { schema } = Astro.props;
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(schema)} is:inline/>
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify(schema)}
+  is:inline
+/>

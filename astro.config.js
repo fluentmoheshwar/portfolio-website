@@ -5,7 +5,7 @@ import showTailwindcssBreakpoint from "astro-show-tailwindcss-breakpoint";
 import { defineConfig } from "astro/config";
 import browserslist from "browserslist";
 import { browserslistToTargets } from "lightningcss";
-import domain from "./src/lib/domain"
+import domain from "./src/lib/domain";
 
 // https://astro.build/config
 export default defineConfig({

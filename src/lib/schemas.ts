@@ -2,7 +2,7 @@
  * Schema.org JSON-LD schemas for Google Rich Results
  */
 
-import domain from "./domain.ts"
+import domain from "./domain.ts";
 
 export interface PersonSchema {
   "@context": string;

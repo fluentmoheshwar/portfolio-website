@@ -2,13 +2,14 @@
 
 ## Choosing a Testing Approach
 
-| Approach | Use Case | Speed | Setup | Runtime |
-|----------|----------|-------|-------|---------|
-| **getPlatformProxy** | Unit tests, logic testing | Fast | Low | Miniflare |
-| **Miniflare API** | Integration tests, full control | Medium | Medium | Miniflare |
-| **vitest-pool-workers** | Vitest runner integration | Medium | Medium | workerd |
+| Approach                | Use Case                        | Speed  | Setup  | Runtime   |
+| ----------------------- | ------------------------------- | ------ | ------ | --------- |
+| **getPlatformProxy**    | Unit tests, logic testing       | Fast   | Low    | Miniflare |
+| **Miniflare API**       | Integration tests, full control | Medium | Medium | Miniflare |
+| **vitest-pool-workers** | Vitest runner integration       | Medium | Medium | workerd   |
 
 **Quick guide:**
+
 - Unit tests → getPlatformProxy
 - Integration tests → Miniflare API
 - Vitest workflows → vitest-pool-workers
@@ -24,7 +25,7 @@ export default { test: { environment: "node" } };
 
 ```js
 import { env } from "cloudflare:test";
-import { describe, it, expect } from "vitest";
+import { describe, expect, it } from "vitest";
 
 describe("Business logic", () => {
   it("processes data with KV", async () => {
@@ -58,7 +59,7 @@ export default defineWorkersConfig({
 
 ```js
 import { env, SELF } from "cloudflare:test";
-import { it, expect } from "vitest";
+import { expect, it } from "vitest";
 
 it("handles fetch", async () => {
   const res = await SELF.fetch("http://example.com/");
@@ -115,14 +116,19 @@ await worker.scheduled({ cron: "0 0 * * *" });
 
 ```js
 // Per-test isolation
-beforeEach(() => { mf = new Miniflare({ kvNamespaces: ["TEST"] }); });
+beforeEach(() => {
+  mf = new Miniflare({ kvNamespaces: ["TEST"] });
+});
 afterEach(() => mf.dispose());
 
 // Mock external APIs
 new Miniflare({
   workers: [
     { name: "main", serviceBindings: { API: "mock-api" }, script: `...` },
-    { name: "mock-api", script: `export default { async fetch() { return Response.json({mock: true}); } }` },
+    {
+      name: "mock-api",
+      script: `export default { async fetch() { return Response.json({mock: true}); } }`,
+    },
   ],
 });
 ```
@@ -143,7 +149,7 @@ await env.KV.put("key", "value"); // Typed!
 export default {
   async fetch(req: Request, env: Env) {
     return new Response(await env.KV.get("key"));
-  }
+  },
 } satisfies ExportedHandler<Env>;
 ```
 
@@ -160,11 +166,13 @@ assert.strictEqual(res.status, 101);
 
 ```js
 // Old (deprecated)
-import { unstable_dev } from "wrangler";
-const worker = await unstable_dev("src/index.ts");
 
 // New
 import { Miniflare } from "miniflare";
+import { unstable_dev } from "wrangler";
+
+const worker = await unstable_dev("src/index.ts");
+
 const mf = new Miniflare({ scriptPath: "src/index.ts" });
 ```
 
