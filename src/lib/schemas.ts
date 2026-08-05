@@ -3,6 +3,7 @@
  */
 
 import domain from "./domain.ts";
+const username = "fluentmoheshwar";
 
 export interface PersonSchema {
   "@context": string;
@@ -12,7 +13,6 @@ export interface PersonSchema {
   image: string;
   description: string;
   sameAs: string[];
-  birthPlace?: string;
   jobTitle?: string;
   worksFor?: {
     "@type": string;
@@ -116,11 +116,18 @@ export function createPersonSchema(): PersonSchema {
     description:
       "Software developer specializing in Tailwind CSS and TypeScript, with expertise in full-stack web development using Node.js and Express.js.",
     sameAs: [
-      "https://github.com/fluentmoheshwar",
-      "https://twitter.com/fluentmoheshwar",
-      "https://linkedin.com/in/fluentmoheshwar",
+      `https://github.com/${username}`,
+      `https://x.com/${username}`,
+      `https://codeberg.org/${username}/`,
+      `https://facebook.com/${username}/`,
+      `https://x.com/${username}`,
+      `https://www.instagram.com/${username}/`,
+      `https://www.threads.com/@${username}/`,
+      `https://bsky.app/profile/moheshwar.com`,
+      `https://www.youtube.com/@${username}/`,
+      `https://mastodon.social/@${username}/`,
+      "https://weibo.com/u/4011497514",
     ],
-    birthPlace: "Satkhira, Bangladesh",
     jobTitle: "Software Developer",
   };
 }
