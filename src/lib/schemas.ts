@@ -3,6 +3,7 @@
  */
 
 import domain from "./domain.ts";
+
 const username = "fluentmoheshwar";
 
 export interface PersonSchema {
