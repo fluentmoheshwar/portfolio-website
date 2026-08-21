@@ -31,7 +31,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@tailwindcss/typography": "^0.5.20",
     "astro-show-tailwindcss-breakpoint": "^2.0.0",
-    "browserslist": "^4.28.7",
+    "browserslist": "^4.28.8",
     "daisyui": "^5.7.17",
     "lightningcss": "^1.33.0",
     "prettier": "^3.9.6",
