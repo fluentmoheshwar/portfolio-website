@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24e34588-488e-4609-9248-ac637d690dda" name="Changes" comment="ide: add intellij settings">
+      <change afterPath="$PROJECT_DIR$/src/data/posts/windows-development-tricks.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="moduleName" value="portfolio-website" />
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console.groovy" />
+        </Entry>
+      </list>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000010509278294" />
+      <entry key="MS500" value="1.0738167507362408" />
+      <entry key="S2" value="2.1961691518804116" />
+      <entry key="S5" value="4.759060314589842" />
+      <entry key="S10" value="7.794469873329134" />
+      <entry key="S30" value="13.103571862070853" />
+      <entry key="S60" value="16.214059490148017" />
+      <entry key="M2" value="20.887894923713194" />
+      <entry key="M5" value="30.55049677032531" />
+      <entry key="M10" value="37.403935799946666" />
+      <entry key="M15" value="40.42948633573167" />
+      <entry key="M30" value="43.93396347157835" />
+      <entry key="H1" value="45.891075565204225" />
+      <entry key="H2" value="46.925794977493275" />
+      <entry key="H4" value="47.457862523770764" />
+      <entry key="D1" value="47.90893586096959" />
+      <entry key="W1" value="47.98697338794035" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9526389854149931" />
+      <entry key="MS500" value="1.06325817503661" />
+      <entry key="S2" value="2.1902169886491025" />
+      <entry key="S5" value="4.753671520109876" />
+      <entry key="S10" value="7.789989965898023" />
+      <entry key="S30" value="13.101035413824826" />
+      <entry key="S60" value="16.21247515185787" />
+      <entry key="M2" value="20.886820079895195" />
+      <entry key="M5" value="30.54979119312" />
+      <entry key="M10" value="37.40347802445137" />
+      <entry key="M15" value="40.42914951527352" />
+      <entry key="M30" value="43.933776519968276" />
+      <entry key="H1" value="45.89097686735739" />
+      <entry key="H2" value="46.92574424223575" />
+      <entry key="H4" value="47.45783679894881" />
+      <entry key="D1" value="47.908931522964025" />
+      <entry key="W1" value="47.98697276697541" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3I8e7J4U4fLQ9oSZyx0tZSFSPQv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "bun",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "Z:/portfolio-website",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "bun",
+    "prettierjs.PrettierConfiguration.Package": "Z:\\portfolio-website\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "terminal",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "Z:\\portfolio-website\\node_modules\\typescript\\lib"
+  }
+}]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\Moheshwar\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="0ba3faf2-47f9-4643-8c23-863564522c78" reportId="portfolio-website/qodana/2026-08-22" />
+    </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.9437.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24e34588-488e-4609-9248-ac637d690dda" name="Changes" comment="" />
+      <created>1787150454783</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1787150454783</updated>
+      <workItem from="1787390220997" duration="910000" />
+      <workItem from="1787391150313" duration="4000" />
+      <workItem from="1787409918579" duration="833000" />
+      <workItem from="1787421986414" duration="130000" />
+    </task>
+    <task id="LOCAL-00001" summary="ide: add intellij settings">
+      <option name="closed" value="true" />
+      <created>1787410150222</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1787410150222</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ide: add intellij settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="ide: add intellij settings" />
+  </component>
+</project>
