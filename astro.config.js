@@ -32,6 +32,7 @@ export default defineConfig({
     },
     experimental: {
       responsiveImages: true,
+      incrementalBuild: true,
     },
   },
 });
