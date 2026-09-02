@@ -8,11 +8,13 @@ import { createBlogPostingSchema } from "../../lib/schemas";
 
 export async function getStaticPaths() {
   const posts: CollectionEntry<"posts">[] = await getCollection("posts");
-  return posts.map((post) => ({
-    params: { id: post.id },
-    props: post,
-    cacheKey: post.digest,
-  }));
+  return posts
+    .filter((post) => !import.meta.env.PROD || !post.data.draft)
+    .map((post) => ({
+      params: { id: post.id },
+      props: post,
+      cacheKey: post.digest,
+    }));
 }
 const post = Astro.props as CollectionEntry<"posts">;
 const { Content } = await render(post);

@@ -1,6 +1,8 @@
 ---
 import { getCollection } from "astro:content";
-const posts = await getCollection("posts");
+const posts = (await getCollection("posts")).filter(
+  (post) => !import.meta.env.PROD || !post.data.draft,
+);
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
