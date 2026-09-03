@@ -18,7 +18,7 @@ Here are a few tips and tricks to improve your development experience on this po
 
 Windows restricts the file paths for all applications to 260 characters. However, many development tools and package managers won't work properly without long paths enabled.
 
-To enable long file paths, go to Settings (`Win`+`I`) System Advanced and toggle Enable long paths on.
+To enable long file paths, go to Settings (`Win`+`I`) System > Advanced and toggle Enable long paths on.
 
 ![Long File Paths in Windows Settings](../../assets/images/posts/windows-development-tricks/longpaths.png)
 
@@ -40,7 +40,7 @@ Benefits of using Dev Drive:
 
 ![Dev Drive Performance improvement chart](../../assets/images/posts/windows-development-tricks/devdrive2.png)
 
-To create a Dev Drive, open Windows Settings (`Win`+`I`) and navigate to System  Storage  Advanced Storage Settings  Disks & volumes. Select Create dev drive.
+To create a Dev Drive, open Windows Settings (`Win`+`I`) and navigate to System > Storage > Advanced > Storage Settings > Disks & volumes. Select Create dev drive.
 
 You will be given three options:
 
@@ -77,7 +77,7 @@ To enable Sudo for Windows, open System  Advanced in Windows Settings and set En
 
 ## [Git in File Explorer](https://learn.microsoft.com/en-us/windows/advanced-settings/fe-version-control)
 
-To enable Git in File Explorer open Windows Settings (`Win`+`I`) and navigate to System  Advanced  File Explorer  Choose Folder and choose your repositories.
+To enable Git in File Explorer open Windows Settings (`Win`+`I`) and navigate to System > Advanced > File Explorer  Choose Folder and choose your repositories.
 
 ![Git in File Explorer in Settings](../../assets/images/posts/windows-development-tricks/git_in_fe.png)
 
