@@ -8,7 +8,7 @@ keywords: AI, web development, programming, coding, software engineering,  Micro
 socialImage: /social_images/posts/windows-development-tricks.png
 ---
 
-[Microsoft Windows](https://www.microsoft.com/en-us/windows) is the most used operating system in the World. However, when it comes to Software Development, the experience is sometimes worse than other Operating Systems such as GNU/Linux or macOS.
+[Microsoft Windows](https://www.microsoft.com/en-us/windows) is the most used desktop operating system in the World. However, when it comes to Software Development, the experience is sometimes worse than other Operating Systems such as GNU/Linux or macOS.
 
 Microsoft is constantly working on improving the developer experience on Windows to make Windows the platform for developers.
 
@@ -30,7 +30,7 @@ New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name
 
 ## Create a [Dev Drive](https://learn.microsoft.com/en-us/windows/dev-drive/)
 
-Dev Drive is a new form of storage drive to improve performance for key developer workloads. Such as storing third-party libraries, keeping cache, compiling, and more.
+Dev Drive is a new form of storage drive to improve performance for key developer workloads, such as storing third-party libraries, keeping caches, and compiling.
 
 Benefits of using Dev Drive:
 
@@ -46,7 +46,7 @@ You will be given three options:
 
 1. Create new VHD - Build volume on a new virtual hard disk
 2. Resize an existing volume - Create new unallocated space to build on
-3. Unallocated space on disk - Use the unallocated space on an existing disk. *This option will only display if you have previously set up unallocated space in your storage.*
+3. Unallocated space on disk - Use the unallocated space on an existing disk. _This option will only display if you have previously set up unallocated space in your storage._
 
 ![Settings Panel on Dev Drive](../../assets/images/posts/windows-development-tricks/devdrive.png)
 
@@ -71,13 +71,13 @@ Read [https://learn.microsoft.com/en-us/windows/dev-drive/\#storing-package-cach
 
 ## Enable [sudo](https://learn.microsoft.com/en-us/windows/advanced-settings/sudo/)
 
-To enable Sudo for Windows, open System  Advanced in Windows Settings and set Enable sudo to On.
+To enable Sudo for Windows, open System Advanced in Windows Settings and set Enable sudo to On.
 
 ![sudo in Settings](../../assets/images/posts/windows-development-tricks/sudo.png)
 
 ## [Git in File Explorer](https://learn.microsoft.com/en-us/windows/advanced-settings/fe-version-control)
 
-To enable Git in File Explorer open Windows Settings (`Win`+`I`) and navigate to System > Advanced > File Explorer  Choose Folder and choose your repositories.
+To enable Git in File Explorer open Windows Settings (`Win`+`I`) and navigate to System > Advanced > File Explorer Choose Folder and choose your repositories.
 
 ![Git in File Explorer in Settings](../../assets/images/posts/windows-development-tricks/git_in_fe.png)
 
@@ -107,7 +107,7 @@ winget install Microsoft.PowerShell
 
 ## Customize your shell
 
-While this is not unique to Windows. You can customize your shell in various ways, such as using `oh-my-posh`, `starship,` and many more.
+While this is not unique to Windows, you can customize your shell in various ways, such as using `oh-my-posh`, `starship`, and many more.
 
 You can see mine at this URL: <https://moheshwar.com/posts/shellsetup/>
 
