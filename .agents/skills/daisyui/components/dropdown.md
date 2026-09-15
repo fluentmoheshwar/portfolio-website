@@ -1,11 +1,9 @@
-### dropdown
+### Dropdown
+A dropdown can open a menu or another element when the user clicks the button.
 
-Dropdown can open a menu or any other element when the button is clicked
-
-[dropdown docs](https://daisyui.com/components/dropdown/)
+[Dropdown documentation](https://daisyui.com/components/dropdown/)
 
 #### Class names
-
 - component: `dropdown`
 - part: `dropdown-content`
 - placement: `dropdown-start`, `dropdown-center`, `dropdown-end`, `dropdown-top`, `dropdown-bottom`, `dropdown-left`, `dropdown-right`
@@ -13,41 +11,22 @@ Dropdown can open a menu or any other element when the button is clicked
 
 #### Syntax
 
-Using popover API (recommended)
-
+Popover API:
 ```html
 <button popovertarget="{id}" style="anchor-name:--{anchor}">{button}</button>
-<ul class="dropdown" popover id="{id}" style="position-anchor:--{anchor}">
-  {CONTENT}
-</ul>
+<ul class="dropdown" popover id="{id}" style="position-anchor:--{anchor}">{CONTENT}</ul>
 ```
 
-Using details and summary (only opens/closes on click)
-
+The `details` and `summary` elements open and close only when the user clicks them:
 ```html
 <details class="dropdown">
   <summary>Button</summary>
-  <ul class="dropdown-content">
-    {CONTENT}
-  </ul>
+  <ul class="dropdown-content">{CONTENT}</ul>
 </details>
 ```
 
-Using CSS focus (not recommended)
-
-```html
-<div class="dropdown">
-  <div tabindex="0" role="button">Button</div>
-  <ul tabindex="-1" class="dropdown-content">
-    {CONTENT}
-  </ul>
-</div>
-```
-
 #### Rules
-
-- {MODIFIER} is optional and can have one of the modifier/placement class names
-- replace `{id}` and `{anchor}` with a unique name
-- For CSS focus dropdowns, use `tabindex="0"` and `role="button"` on the button
-- The content can be any HTML element (not just `<ul>`)
-- For popover API method, we don't use `dropdown-content`. Only button and a `dropdown`
+- `{MODIFIER}` is optional. It can include one modifier class name and one placement class name.
+- Replace `{id}` and `{anchor}` with the same name. Do not use this name for another element.
+- The content is not limited to `<ul>`. It can be a different HTML element.
+- For the popover API method, use only a button and `dropdown`. Do not use `dropdown-content`.

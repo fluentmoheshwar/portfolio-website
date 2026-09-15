@@ -1,21 +1,17 @@
-### validator
+### Validator
+The validator class sets an error color or a success color on a form element. The input validation rules control the color.
 
-Validator class changes the color of form elements to error or success based on input's validation rules
-
-[validator docs](https://daisyui.com/components/validator/)
+[Validator documentation](https://daisyui.com/components/validator/)
 
 #### Class names
-
 - component: `validator`
 - part: `validator-hint`
 
 #### Syntax
-
 ```html
 <input type="{type}" class="input validator" required />
 <p class="validator-hint">Error message</p>
 ```
 
 #### Rules
-
-- Use with `input`, `select`, `textarea`
+- Use the validator with `input`, `select`, and `textarea`.
