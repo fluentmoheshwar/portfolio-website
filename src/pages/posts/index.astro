@@ -14,7 +14,7 @@ const posts = (await getCollection("posts")).filter(
   lang="en"
   title="Posts - Moheshwar Amarnath Biswas"
   description="Posts by Moheshwar Amarnath Biswas"
-  socialImage="/images/social/home.png"
+  socialImage="/social_images/home.png"
   keywords="posts, blog, articles, Moheshwar Amarnath Biswas"
   additionalSchemas={[
     createBreadcrumbSchema([
@@ -28,6 +28,7 @@ const posts = (await getCollection("posts")).filter(
     <a
       href="/rss.xml"
       target="_blank"
+      rel="noopener noreferrer"
       class="btn btn-outline btn-primary"
       aria-label="Subscribe to RSS Feed"
     >
