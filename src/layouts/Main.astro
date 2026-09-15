@@ -79,7 +79,7 @@ declare global {
       title="RSS Feed"
       href="/rss.xml"
     />
-    <link rel="canonical" href={canonical} />
+    {canonical && <link rel="canonical" href={canonical} />}
   </head>
 
   <body class="flex h-screen flex-col">
