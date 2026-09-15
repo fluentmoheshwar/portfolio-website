@@ -18,10 +18,10 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref || github.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
 
-      - name: Install nub.js
-        uses: nubjs/setup-nub@v0
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
 
       - name: Install dependencies
-        run: nub install
+        run: bun install --frozen-lockfile
       - name: Run Astro Diagnostics
-        run: nub run astro check
+        run: bun run astro check
