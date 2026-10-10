@@ -197,7 +197,11 @@ const { DB } = Astro.locals.runtime.env;
 const todos = await DB.prepare("SELECT * FROM todos").all();
 ---
 
-<ul>{todos.results.map((t) => <li>{t.title}</li>)}</ul>
+<ul>
+  {todos.results.map((t) => (
+    <li>{t.title}</li>
+  ))}
+</ul>
 ```
 
 ### Nuxt

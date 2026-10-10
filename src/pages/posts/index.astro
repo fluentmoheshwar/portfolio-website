@@ -36,18 +36,16 @@ const posts = (await getCollection("posts")).filter(
     </a>
   </div>
   <ul class="m-auto list-disc">
-    {
-      posts.map((post) => (
-        <li>
-          <a
-            href={`/posts/${post.id}/`}
-            class="post-title text-xl underline decoration-pink-500 duration-500 hover:underline hover:decoration-sky-500 sm:text-3xl"
-          >
-            {post.data.title}
-          </a>
-          <p class="text-base sm:text-lg">{post.data.description}</p>
-        </li>
-      ))
-    }
+    {posts.map((post) => (
+      <li>
+        <a
+          href={`/posts/${post.id}/`}
+          class="post-title text-xl underline decoration-pink-500 duration-500 hover:underline hover:decoration-sky-500 sm:text-3xl"
+        >
+          {post.data.title}
+        </a>
+        <p class="text-base sm:text-lg">{post.data.description}</p>
+      </li>
+    ))}
   </ul>
 </MainLayout>

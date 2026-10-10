@@ -60,12 +60,18 @@ declare global {
     />
 
     <SchemaOrg
-      schema={createPersonSchema() as unknown as /* prettier-ignore */ Record<string, string>}
+      schema={
+        createPersonSchema() as unknown as /* prettier-ignore */ Record<string, string>
+      }
     />
     <SchemaOrg
-      schema={createWebsiteSchema() as unknown as /* prettier-ignore */ Record<string, string>}
+      schema={
+        createWebsiteSchema() as unknown as /* prettier-ignore */ Record<string, string>
+      }
     />
-    {additionalSchemas.map((schema) => <SchemaOrg schema={schema} />)}
+    {additionalSchemas.map((schema) => (
+      <SchemaOrg schema={schema} />
+    ))}
     <noscript>
       <p class="m-auto bg-pink-800 p-5 text-center text-2xl text-white">
         JavaScript is disabled! Some features may not function correctly!
@@ -97,7 +103,11 @@ declare global {
       };
       window.secrets = secrets;
     </script>
-    <script src="https://keepandroidopen.org/banner.js" defer async is:inline
+    <script
+      src="https://keepandroidopen.org/banner.js"
+      defer
+      async
+      is:inline
     ></script>
   </body>
 </html>
