@@ -46,9 +46,11 @@ const applicationSchemas = projects.flatMap((project) => {
 
 <section class="mx-auto max-w-5xl">
   <SchemaOrg
-    schema={createCollectionPageSchema(
-      projectSchemaData,
-    ) as unknown as /* prettier-ignore */ Record<string, string>}
+    schema={
+      createCollectionPageSchema(
+        projectSchemaData,
+      ) as unknown as /* prettier-ignore */ Record<string, string>
+    }
   />
   {
     applicationSchemas.map((schema) => (

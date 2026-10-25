@@ -53,23 +53,23 @@ const canonicalUrl = `https://${domain}/posts/${post.id}/`;
     },
   ]}
 >
-  <article
-    class="prose lg:prose-lg prose-pre:text-left *:text-center sm:flex sm:flex-col sm:items-center sm:gap-4 sm:self-center"
-  >
+  <article class="prose lg:prose-lg prose-pre:text-left *:text-center sm:flex sm:flex-col sm:items-center sm:gap-4 sm:self-center">
     <h1>{post.data.title}</h1>
     <p class="not-prose text-xl">{post.data.description}</p>
     <p class="not-prose">
-      Published on {post.data.publishDate.toLocaleDateString()} • {
-        readingTimeMinutes
-      } min read • Last modified {lastModified.toLocaleDateString()}
+      Published on {post.data.publishDate.toLocaleDateString()} •{" "}
+      {readingTimeMinutes} min read • Last modified{" "}
+      {lastModified.toLocaleDateString()}
     </p>
     <Content />
     <button
       type="button"
       onclick="share();"
       class="btn mt-4 flex"
-      aria-label="Share"><FaShare /> Share</button
+      aria-label="Share"
     >
+      <FaShare /> Share
+    </button>
   </article>
   <script is:inline>
     const share = () => {
