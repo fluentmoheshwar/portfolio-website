@@ -25,7 +25,8 @@ const projectSchemaData = projects.map((project) => ({
 }));
 
 // Installable applications get their own SoftwareApplication/WebApplication
-// schema for Google's software app rich result; metadata lives in projects.ts.
+// schema; it omits `review`/`aggregateRating`, so it doesn't qualify for
+// Google's software-app rich result. Metadata lives in projects.ts.
 const applicationSchemas = projects.flatMap((project) => {
   const application = project.application;
   if (!application) return [];
@@ -37,6 +38,7 @@ const applicationSchemas = projects.flatMap((project) => {
       application.operatingSystem,
       application.applicationCategory,
       application.type,
+      application.softwareRequirements,
     ),
   ];
 });

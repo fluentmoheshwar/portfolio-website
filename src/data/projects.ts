@@ -7,6 +7,8 @@ export interface ProjectApplication {
   applicationCategory: string;
   /** Optional Google-supported subtype for browser-based apps. */
   type?: "WebApplication" | "MobileApplication";
+  /** Optional host software requirement, e.g. "Visual Studio or Visual Studio Code". */
+  softwareRequirements?: string;
 }
 
 export interface Project {
@@ -75,8 +77,9 @@ export const projects: Project[] = [
     ],
     application: {
       url: "https://github.com/fluentmoheshwar/puja-bloom",
-      operatingSystem: "Visual Studio / Visual Studio Code",
+      operatingSystem: "Windows, macOS, Linux",
       applicationCategory: "DeveloperApplication",
+      softwareRequirements: "Visual Studio or Visual Studio Code",
     },
   },
   {

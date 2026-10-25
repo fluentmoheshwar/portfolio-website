@@ -77,6 +77,7 @@ export interface SoftwareApplicationSchema {
   };
   applicationCategory: string;
   operatingSystem: string;
+  softwareRequirements?: string;
   offers: {
     "@type": string;
     price: number;
@@ -208,8 +209,9 @@ export function createBlogPostingSchema(
  * for free apps), and a rating or review; `operatingSystem` and
  * `applicationCategory` are recommended. Every public project here is free, so
  * the offer is emitted as a zero price in USD. Ratings are intentionally
- * omitted — the site has no real ones, and fabricating them violates Google's
- * structured data guidelines.
+ * omitted — the site has no real ones and fabricating them violates Google's
+ * guidelines — so the emission is Schema.org metadata only and does not
+ * qualify for the rich result.
  */
 export function createSoftwareApplicationSchema(
   name: string,
@@ -218,6 +220,7 @@ export function createSoftwareApplicationSchema(
   operatingSystem: string,
   applicationCategory: string = "DeveloperApplication",
   type: string = "SoftwareApplication",
+  softwareRequirements?: string,
 ): SoftwareApplicationSchema {
   return {
     "@context": "https://schema.org",
@@ -231,6 +234,7 @@ export function createSoftwareApplicationSchema(
     },
     applicationCategory: applicationCategory,
     operatingSystem: operatingSystem,
+    ...(softwareRequirements && { softwareRequirements }),
     offers: {
       "@type": "Offer",
       price: 0,
