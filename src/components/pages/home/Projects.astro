@@ -9,15 +9,39 @@ import OpenPeriodsImage from "../../../assets/images/home/openperiods.png";
 import PujaBloomImage from "../../../assets/images/home/puja_bloom.png";
 import TauriWinToolsImage from "../../../assets/images/home/tauriwintools.png";
 import { projects } from "../../../data/projects";
-import { createCollectionPageSchema } from "../../../lib/schemas";
+import {
+  createCollectionPageSchema,
+  createSoftwareApplicationSchema,
+} from "../../../lib/schemas";
 import SchemaOrg from "../../schemas/SchemaOrg.astro";
 
+// No `image` in the schemas: bundled Astro assets have hashed URLs and
+// `public/social_images/projects/` doesn't exist, so referencing either would
+// put 404s in the structured data.
 const projectSchemaData = projects.map((project) => ({
   name: project.name,
   description: project.description,
   url: project.links[0]?.url,
-  image: project.image,
 }));
+
+// Installable applications get their own SoftwareApplication/WebApplication
+// schema; it omits `review`/`aggregateRating`, so it doesn't qualify for
+// Google's software-app rich result. Metadata lives in projects.ts.
+const applicationSchemas = projects.flatMap((project) => {
+  const application = project.application;
+  if (!application) return [];
+  return [
+    createSoftwareApplicationSchema(
+      project.name,
+      project.description,
+      application.url,
+      application.operatingSystem,
+      application.applicationCategory,
+      application.type,
+      application.softwareRequirements,
+    ),
+  ];
+});
 ---
 
 <section class="mx-auto max-w-5xl">
@@ -28,7 +52,18 @@ const projectSchemaData = projects.map((project) => ({
       ) as unknown as /* prettier-ignore */ Record<string, string>
     }
   />
-  <h2 class="mb-3 text-center text-2xl underline decoration-pink-500 sm:text-3xl">
+  {
+    applicationSchemas.map((schema) => (
+      <SchemaOrg
+        schema={
+          schema as unknown as /* prettier-ignore */ Record<string, string>
+        }
+      />
+    ))
+  }
+  <h2
+    class="mb-3 text-center text-2xl underline decoration-pink-500 sm:text-3xl"
+  >
     Projects
   </h2>
   <div class="grid gap-8 sm:grid-cols-2">

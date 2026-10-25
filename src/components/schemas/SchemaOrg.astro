@@ -4,10 +4,11 @@ export interface Props {
 }
 
 const { schema } = Astro.props;
+
+// A raw `<` inside the JSON (e.g. from post content) could emit `</script>`
+// early and both invalidate the structured data and inject markup. Escaping
+// it as \u003c is valid inside JSON strings, so the output stays JSON-LD.
+const jsonLd = JSON.stringify(schema).replace(/</g, "\\u003c");
 ---
 
-<script
-  type="application/ld+json"
-  set:html={JSON.stringify(schema)}
-  is:inline
-/>
+<script type="application/ld+json" set:html={jsonLd} is:inline />

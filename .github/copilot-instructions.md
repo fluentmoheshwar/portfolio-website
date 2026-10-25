@@ -193,6 +193,7 @@ The site implements **schema.org JSON-LD** structured data for Google Rich Resul
 - **WebSite Schema** - On all pages, providing site name, description, and creator info
 - **BlogPosting Schema** - Automatically on each blog post with headline, author, publication date, and image
 - **CollectionPage Schema** - On the home page for projects, describing the collection of software applications
+- **SoftwareApplication / WebApplication Schema** - On the home page for the installable projects (TauriWinTools, Puja Bloom, OpenPeriods, DSE Scraper), with `operatingSystem`, `applicationCategory` and a free `offers: { price: 0 }`. It omits `review`/`aggregateRating` (no real ratings exist), so it does not qualify for Google's Software Apps rich result — it's Schema.org metadata only. App metadata lives in `src/data/projects.ts` under each project's `application` field.
 - **BreadcrumbList Schema** - On the posts index page for navigation hierarchy
 
 **Schema Components:**

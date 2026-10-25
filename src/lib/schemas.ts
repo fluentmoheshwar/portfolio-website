@@ -55,6 +55,8 @@ export interface BlogPostingSchema {
     logo: {
       "@type": string;
       url: string;
+      width: number;
+      height: number;
     };
   };
   mainEntityOfPage: {
@@ -69,13 +71,18 @@ export interface SoftwareApplicationSchema {
   name: string;
   description: string;
   url: string;
-  image?: string;
   author: {
     "@type": string;
     name: string;
   };
   applicationCategory: string;
-  operatingSystem?: string;
+  operatingSystem: string;
+  softwareRequirements?: string;
+  offers: {
+    "@type": string;
+    price: number;
+    priceCurrency: string;
+  };
 }
 
 export interface BreadcrumbSchema {
@@ -121,7 +128,6 @@ export function createPersonSchema(): PersonSchema {
       `https://x.com/${username}`,
       `https://codeberg.org/${username}/`,
       `https://facebook.com/${username}/`,
-      `https://x.com/${username}`,
       `https://www.instagram.com/${username}/`,
       `https://www.threads.com/@${username}/`,
       `https://bsky.app/profile/moheshwar.com`,
@@ -185,6 +191,8 @@ export function createBlogPostingSchema(
       logo: {
         "@type": "ImageObject",
         url: `https://${domain}/social_images/home.png`,
+        width: 1620,
+        height: 1080,
       },
     },
     mainEntityOfPage: {
@@ -195,27 +203,43 @@ export function createBlogPostingSchema(
 }
 
 /**
- * Creates a SoftwareApplication schema for projects
+ * Creates a SoftwareApplication schema for projects.
+ *
+ * Google's Software Apps rich result requires `name`, `offers.price` (use `0`
+ * for free apps), and a rating or review; `operatingSystem` and
+ * `applicationCategory` are recommended. Every public project here is free, so
+ * the offer is emitted as a zero price in USD. Ratings are intentionally
+ * omitted — the site has no real ones and fabricating them violates Google's
+ * guidelines — so the emission is Schema.org metadata only and does not
+ * qualify for the rich result.
  */
 export function createSoftwareApplicationSchema(
   name: string,
   description: string,
   url: string,
-  image?: string,
+  operatingSystem: string,
   applicationCategory: string = "DeveloperApplication",
+  type: string = "SoftwareApplication",
+  softwareRequirements?: string,
 ): SoftwareApplicationSchema {
   return {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": type,
     name: name,
     description: description,
     url: url,
-    image: image,
     author: {
       "@type": "Person",
       name: "Moheshwar Amarnath Biswas",
     },
     applicationCategory: applicationCategory,
+    operatingSystem: operatingSystem,
+    ...(softwareRequirements && { softwareRequirements }),
+    offers: {
+      "@type": "Offer",
+      price: 0,
+      priceCurrency: "USD",
+    },
   };
 }
 

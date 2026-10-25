@@ -5,7 +5,7 @@ description: Progressive Web Apps (PWA) কি, কেন, কিভাবে?
 publishDate: 2025-03-22
 draft: false
 keywords: progressive web apps, pwa, workbox, mobile apps, desktop apps, web apps, web development
-socialImage: /social_images/posts/pwa-ki.png
+socialImage: /social_images/home.png
 ---
 
 ## PWA কি?
